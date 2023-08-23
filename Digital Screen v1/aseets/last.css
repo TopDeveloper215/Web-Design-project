@@ -1,0 +1,880 @@
+body {
+    margin: 0;
+    width: 100%;
+    height: 100vh;
+    vertical-align: middle;
+}
+
+.content-panel {
+    background-image: url('./results/png/tna-digital-screen-image-bg-only.png');
+    background-size: 100% 100%;
+    border: 1px solid #cccccc;
+    margin: auto;
+    position: relative;
+    overflow: hidden;
+}
+
+.arrow-head {
+    width: 11%;
+    float: left;
+    text-align: right;
+}
+
+.arrow-head-img {
+    width: 40%;
+    height: 13%;
+}
+
+/*
+    * ======================== last page style ================================
+*/
+/* div include start button */
+
+.congratulation-title {
+    color: #1D3E8E;
+    letter-spacing: -0.01em;
+    font-family: 'Frutiger Bold';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 4vh;
+    line-height: normal;
+    position: absolute;
+    top: 13.57%;
+    left: -30%;
+    opacity: 0;
+    animation-name: congratulation-anim;
+    animation-duration: 1.5s;
+    animation-delay: 1s;
+    animation-iteration-count: 1;
+    animation-timing-function: linear;
+    animation-fill-mode: forwards;
+}
+
+@keyframes congratulation-anim {
+    to {
+        left: 6.95%;
+        opacity: 1;
+    }
+}
+
+
+.congratulation-content {
+    color: #1D3E8E;
+    font-family: 'Frutiger Bold';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 2vh;
+    line-height: normal;
+    position: absolute;
+    top: 18.36%;
+    left: -23%;
+    opacity: 0;
+    animation-name: congratulation-anim1;
+    animation-duration: 0.7s;
+    animation-delay: 1.5s;
+    animation-iteration-count: 1;
+    animation-timing-function: linear;
+    animation-fill-mode: forwards;
+}
+
+@keyframes congratulation-anim1 {
+    to {
+        left: 6.95%;
+        opacity: 1;
+    }
+}
+
+
+.congratulation-content1 {
+    color: #1D3E8E;
+    font-family: 'Frutiger Bold';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 2vh;
+    line-height: normal;
+    position: absolute;
+    top: 20.8%;
+    left: -23%;
+    opacity: 0;
+    animation-name: congratulation-anim2;
+    animation-duration: 1s;
+    animation-delay: 2.2s;
+    animation-iteration-count: 1;
+    animation-timing-function: linear;
+    animation-fill-mode: forwards;
+}
+
+@keyframes congratulation-anim2 {
+    to {
+        left: 6.95%;
+        opacity: 1;
+    }
+}
+
+/* pocket anim */
+
+/* --------------------------------------------- */
+.pocket5-anim {
+    width: 10.22%;
+    height: 7.15%;
+    background-image: url('./results/png/tna-digital-screen-image-pack-5-old.png');
+    background-size: 100% 100%;
+    transform: rotate(-20deg);
+    transform-origin: 50% 50%;
+    position: absolute;
+    top: 15%;
+    left: 20.46%;
+    opacity: 0;
+    animation: pocket5fadeIn 0.2s linear 3.2s forwards,
+        pocket5fallAnim 1.5s ease-out 3.4s forwards,
+        pocket5fadeOut 0.7s ease-out 4.9s forwards
+}
+
+@keyframes pocket5fadeIn {
+    to {
+        opacity: 0.1;
+        top: 15%;
+        transform: rotate(-20deg);
+    }
+}
+
+@keyframes pocket5fallAnim {
+    0% {
+        opacity: 0.3;
+    }
+
+    40% {
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 1;
+        top: 58%;
+        transform: rotate(140deg);
+    }
+}
+
+@keyframes pocket5fadeOut {
+    to {
+        opacity: 0;
+    }
+}
+
+.pocket5-anim-last {
+    width: 32%;
+    height: 11.53%;
+    background-image: url('./results/png/tna-digital-screen-image-pack-5.png');
+    background-size: 100% 100%;
+    position: absolute;
+    top: 54.3%;
+    left: 17%;
+    opacity: 0;
+    animation: pocket5lastfadeIn 0.7s linear 5.1s forwards
+}
+
+@keyframes pocket5lastfadeIn {
+    to {
+        opacity: 1;
+    }
+}
+
+/* --------------------------------------------- */
+.pocket4-anim {
+    width: 14.17%;
+    height: 9.89%;
+    background-image: url('./results/png/tna-digital-screen-image-pack-4-old.png');
+    background-size: 100% 100%;
+    transform: rotate(17deg);
+    transform-origin: 50% 50%;
+    position: absolute;
+    top: 12%;
+    left: 29%;
+    opacity: 0;
+    animation: pocket4fadeIn 0.2s linear 3.7s forwards,
+        pocket4fallAnim 1.5s ease-out 3.9s forwards,
+        pocket4fadeOut 0.7s ease-out 5.4s forwards
+}
+
+@keyframes pocket4fadeIn {
+    to {
+        opacity: 0.1;
+        top: 12%;
+    }
+}
+
+@keyframes pocket4fallAnim {
+    0% {
+        opacity: 0.3;
+    }
+
+    40% {
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 1;
+        top: 48%;
+        transform: rotate(290deg);
+    }
+}
+
+@keyframes pocket4fadeOut {
+    to {
+        opacity: 0;
+    }
+}
+
+.pocket4-anim-last {
+    width: 34.87%;
+    height: 11.53%;
+    background-image: url('./results/png/tna-digital-screen-image-pack-4.png');
+    background-size: 100% 100%;
+    position: absolute;
+    top: 47.8%;
+    left: 25%;
+    opacity: 0;
+    animation: pocket4lastfadeIn 0.7s linear 5.6s forwards
+}
+
+@keyframes pocket4lastfadeIn {
+    to {
+        opacity: 1;
+    }
+}
+
+
+/* --------------------------------------------- */
+.pocket3-anim {
+    /* width: 17.5%;
+    height: 12.21%; */
+    width: 19.35%;
+    height: 13.5%;
+    background-image: url('./results/png/tna-digital-screen-image-pack-3-old.png');
+    background-size: 100% 100%;
+    transform: rotate(-60deg);
+    transform-origin: 50% 50%;
+    position: absolute;
+    top: 7%;
+    left: 6%;
+    opacity: 0;
+    animation: pocket3fadeIn 0.2s linear 4.2s forwards,
+        pocket3fallAnim 1.5s ease-out 4.4s forwards,
+        pocket3fadeOut 0.7s ease-out 5.9s forwards
+}
+
+@keyframes pocket3fadeIn {
+    to {
+        opacity: 0.1;
+        top: 7%;
+    }
+}
+
+@keyframes pocket3fallAnim {
+    0% {
+        opacity: 0.3;
+    }
+
+    40% {
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 1;
+        top: 46%;
+        transform: rotate(60deg);
+    }
+}
+
+@keyframes pocket3fadeOut {
+    to {
+        opacity: 0;
+    }
+}
+
+.pocket3-anim-last {
+    width: 47%;
+    height: 16.38%;
+    background-image: url('./results/png/tna-digital-screen-image-pack-3.png');
+    background-size: 100% 100%;
+    position: absolute;
+    top: 45.4%;
+    left: 0%;
+    opacity: 0;
+    animation: pocket3lastfadeIn 0.7s linear 6.1s forwards
+}
+
+@keyframes pocket3lastfadeIn {
+    to {
+        opacity: 1;
+    }
+}
+
+/* --------------------------------------------- */
+.pocket2-anim {
+    width: 17.5%;
+    height: 12.21%;
+    background-image: url('./results/png/tna-digital-screen-image-pack-2-old.png');
+    background-size: 100% 100%;
+    transform: rotate(80deg);
+    transform-origin: 50% 50%;
+    position: absolute;
+    top: -2.2%;
+    left: 17.5%;
+    opacity: 0;
+    animation: pocket2fadeIn 0.2s linear 4.7s forwards,
+        pocket2fallAnim 1.5s ease-out 4.9s forwards,
+        pocket2fadeOut 0.7s ease-out 6.4s forwards
+}
+
+@keyframes pocket2fadeIn {
+    to {
+        opacity: 0.1;
+        top: -2.2%;
+    }
+}
+
+@keyframes pocket2fallAnim {
+    0% {
+        opacity: 0.3;
+    }
+
+    40% {
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 1;
+        top: 33.2%;
+        transform: rotate(345deg);
+    }
+}
+
+@keyframes pocket2fadeOut {
+    to {
+        opacity: 0;
+    }
+}
+
+.pocket2-anim-last {
+    width: 33.38%;
+    height: 14.75%;
+    background-image: url('./results/png/tna-digital-screen-image-pack-2.png');
+    background-size: 100% 100%;
+    position: absolute;
+    top: 32.2%;
+    left: 15.5%;
+    opacity: 0;
+    animation: pocket2lastfadeIn 0.7s linear 6.6s forwards
+}
+
+@keyframes pocket2lastfadeIn {
+    to {
+        opacity: 1;
+    }
+}
+
+/* --------------------------------------------- */
+.pocket1-anim {
+    width: 22.45%;
+    height: 15.67%;
+    background-image: url('./results/png/tna-digital-screen-image-pack-1-old.png');
+    background-size: 100% 100%;
+    transform: rotate(-100deg);
+    transform-origin: 50% 50%;
+    position: absolute;
+    top: -12%;
+    left: -3%;
+    opacity: 0;
+    animation: pocket1fadeIn 0.2s linear 5.2s forwards,
+        pocket1fallAnim 1.5s ease-out 5.4s forwards
+}
+
+@keyframes pocket1fadeIn {
+    to {
+        opacity: 0.1;
+        top: -12%;
+    }
+}
+
+@keyframes pocket1fallAnim {
+    0% {
+        opacity: 0.3;
+    }
+
+    40% {
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 1;
+        top: 27.5%;
+        transform: rotate(15deg);
+        transform-origin: 50% 50%;
+    }
+}
+
+@keyframes pocket1fadeOut {
+    to {
+        opacity: 0;
+    }
+}
+
+/* anim circle icon */
+.circle-anim1 {
+    position: absolute;
+    left: 43.1%;
+    top: 26.78%;
+    width: 8.91%;
+    height: 4.70%;
+    background-image: url('./results/png/tna-digital-screen-icon-bag-per-shift-results.png');
+    background-size: 100% 100%;
+    transform: scale(0);
+    transform-origin: 50% 50%;
+    animation: circleanim1 0.4s linear 6.5s forwards
+}
+
+@keyframes circleanim1 {
+    to {
+        transform: scale(1);
+    }
+}
+
+/* todo */
+
+/* anim circle icon */
+.circle-anim2 {
+    position: absolute;
+    width: 15.5%;
+    height: 8.18%;
+    left: 52.5%;
+    top: 29.5%;
+    background-image: url('./results/png/tna-digital-screen-icon-co2-results.png');
+    background-size: 100% 100%;
+    transform: scale(0);
+    transform-origin: 50% 50%;
+    animation: circleanim1 0.4s linear 9.5s forwards
+}
+
+/* anim circle icon */
+.circle-anim3 {
+    position: absolute;
+    width: 9.12%;
+    height: 4.81%;
+    left: 50%;
+    top: 38%;
+    background-image: url('./results/png/tna-digital-screen-icon-financial-saving-results.png');
+    background-size: 100% 100%;
+    transform: scale(0);
+    transform-origin: 50% 50%;
+    animation: circleanim1 0.4s linear 11.8s forwards
+}
+
+/* todo */
+
+
+/* foot */
+.foot-anim {
+    background-image: url('./results/png/tna-digital-screen-image-footprint.png');
+    background-size: 100% 100%;
+    width: 92.68%;
+    height: 29.47%;
+    position: absolute;
+    top: 48%;
+    left: 30%;
+    opacity: 0;
+    animation: hideanim 1s linear 0s forwards,
+        footanim 1s linear 8s forwards
+}
+
+@keyframes hideanim {
+    to {
+        transform: scale(0);
+        transform-origin: 50% 50%;
+    }
+}
+
+@keyframes footanim {
+    70% {
+        transform: scale(1);
+    }
+
+    78% {
+        transform: scale(0.9);
+    }
+
+    86% {
+        transform: scale(1);
+    }
+
+    92% {
+        transform: scale(0.9);
+    }
+
+    98% {
+        transform: scale(1);
+    }
+
+    99% {
+        transform: scale(0.9);
+    }
+
+    100% {
+        transform: scale(1);
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+.foot-letter {
+    width: 48.45%;
+    height: 38.28%;
+    margin-top: 18.5%;
+    margin-left: 26%;
+    background-image: url('./results/png/foot-letter.png');
+    background-size: 100% 100%;
+    animation: footletteranim 12s linear 9s forwards
+}
+
+@keyframes footletteranim {
+    to {
+        transform: scale(0.5);
+        transform-origin: 50% 50%;
+    }
+}
+
+
+.foot-background-anim {
+    width: 84.21%;
+    height: 59.91%;
+    position: absolute;
+    margin-left: 26%;
+    background-image: url('./results/png/tna-digital-screen-image-evaporate.png');
+    background-size: 100% 100%;
+    top: 18%;
+    left: -8%;
+    opacity: 0;
+    animation: backfootanim 15s linear 9s forwards
+}
+
+@keyframes backfootanim {
+    10% {
+        opacity: 1;
+    }
+    to {
+        top: 10%;
+        opacity: 1;
+    }
+}
+
+/* pig animation */
+
+
+.pig-anim {
+    width: 53.10%;
+    height: 13.84%;
+    background-image: url('./results/png/tna-digital-screen-image-piggy-bank.png');
+    background-size: 100% 100%;
+    position: absolute;
+    top: 100%;
+    left: 38%;
+    animation: piganim 0.7s linear 11s forwards
+}
+
+@keyframes piganim {
+    90% {
+        top: 75%;
+    }
+    100% {
+        top: 80%;
+    }
+}
+
+.coin-anim1 {
+    width: 3%;
+    height: 2.64%;
+    background-image: url('./results/png/tna-digital-screen-image-coin-5.png');
+    background-size: 100% 100%;
+    position: absolute;
+    transform-origin: 50% 50%;
+    top: 48%;
+    left: -4%;
+    animation: coin1animfall 2s linear 11s forwards, 
+                coin1animhide 0.7s linear 13s forwards
+}
+
+@keyframes coin1animfall {
+    0% {
+        transform: rotate(0deg);
+    }
+    25% {
+        transform: rotate(360deg);
+    }
+    50% {
+        transform: rotate(720deg);
+    }
+    75% {
+        transform: rotate(1080deg);
+    }
+    100% {
+        transform: rotate(1440deg);
+    }
+    to {
+        top: 77%;
+        left: 60%;
+    }
+}
+
+@keyframes coin1animhide {
+    to {
+        top: 83%;
+        left: 64%;
+    }
+}
+
+
+.coin-anim2 {
+    width: 3%;
+    height: 2.64%;
+    background-image: url('./results/png/tna-digital-screen-image-coin-5.png');
+    background-size: 100% 100%;
+    position: absolute;
+    transform-origin: 50% 50%;
+    top: 48%;
+    left: -4%;
+    animation: coin1animfall 2s linear 11.5s forwards, 
+                coin1animhide 0.7s linear 13.5s forwards
+}
+
+
+/* coin 3 */
+
+.coin-anim3 {
+    width: 3%;
+    height: 2.64%;
+    background-image: url('./results/png/tna-digital-screen-image-coin-5.png');
+    background-size: 100% 100%;
+    position: absolute;
+    transform-origin: 50% 50%;
+    top: 48%;
+    left: -4%;
+    animation: coin3animfall 2s linear 12.3s forwards
+}
+
+@keyframes coin3animfall {
+    0% {
+        transform: rotate(0deg);
+    }
+    25% {
+        transform: rotate(360deg);
+    }
+    50% {
+        transform: rotate(720deg);
+    }
+    75% {
+        transform: rotate(1080deg);
+    }
+    100% {
+        transform: rotate(1440deg);
+    }
+    to {
+        top: 80%;
+        left: 62%;
+    }
+}
+
+
+.coin-anim4 {
+    width: 5.83%;
+    height: 3.44%;
+    background-image: url('./results/png/tna-digital-screen-image-coin-4.png');
+    background-size: 100% 100%;
+    position: absolute;
+    transform-origin: 50% 50%;
+    top: 48%;
+    left: -7%;
+    animation: coin4animfall 2s linear 12.8s forwards
+}
+
+@keyframes coin4animfall {
+    0% {
+        transform: rotate(0deg);
+    }
+    25% {
+        transform: rotate(360deg);
+    }
+    50% {
+        transform: rotate(720deg);
+    }
+    75% {
+        transform: rotate(1080deg);
+    }
+    100% {
+        transform: rotate(1440deg);
+    }
+    to {
+        top: 75.5%;
+        left: 57%;
+    }
+}
+
+
+.coin-anim5 {
+    width: 7.45%;
+    height: 2.17%;
+    background-image: url('./results/png/tna-digital-screen-image-coin-3.png');
+    background-size: 100% 100%;
+    transform-origin: 50% 50%;
+    position: absolute;
+    top: 48%;
+    left: -8%;
+    animation: coin5animfall 2s linear 13.3s forwards
+}
+
+@keyframes coin5animfall {
+    0% {
+        transform: rotate(0deg);
+    }
+    25% {
+        transform: rotate(360deg);
+    }
+    50% {
+        transform: rotate(720deg);
+    }
+    75% {
+        transform: rotate(1080deg);
+    }
+    100% {
+        transform: rotate(1440deg);
+    }
+    to {
+        top: 77%;
+        left: 46%;
+    }
+}
+
+
+
+.coin-anim6 {
+    width: 5.09%;
+    height: 2.71%;
+    background-image: url('./results/png/tna-digital-screen-image-coin-2.png');
+    background-size: 100% 100%;
+    transform-origin: 50% 50%;
+    position: absolute;
+    top: 48%;
+    left: -7%;
+    animation: coin6animfall 2s linear 13.8s forwards
+}
+
+@keyframes coin6animfall {
+    0% {
+        transform: rotate(0deg);
+    }
+    25% {
+        transform: rotate(360deg);
+    }
+    50% {
+        transform: rotate(720deg);
+    }
+    75% {
+        transform: rotate(1080deg);
+    }
+    100% {
+        transform: rotate(1440deg);
+    }
+    to {
+        top: 72%;
+        left: 50%;
+    }
+}
+
+
+
+.coin-anim7 {
+    width: 7.96%;
+    height: 4.2%;
+    background-image: url('./results/png/tna-digital-screen-image-coin-1.png');
+    background-size: 100% 100%;
+    transform-origin: 50% 50%;
+    position: absolute;
+    top: 48%;
+    left: -8%;
+    animation: coin7animfall 2s linear 14.3s forwards
+}
+
+@keyframes coin7animfall {
+    0% {
+        transform: rotate(0deg);
+    }
+    25% {
+        transform: rotate(360deg);
+    }
+    50% {
+        transform: rotate(720deg);
+    }
+    75% {
+        transform: rotate(1080deg);
+    }
+    100% {
+        transform: rotate(1440deg);
+    }
+    to {
+        top: 68%;
+        left: 32%;
+    }
+}
+
+
+
+/* footer style */
+.footer {
+    position: absolute;
+    bottom: 0;
+    width: 86%;
+    height: 7%;
+    padding-left: 7%;
+    padding-right: 7.2%;
+}
+
+.footer-arrow {
+    width: 18%;
+}
+
+.footer-logo {
+    width: 19%;
+}
+
+
+/* footer anim mail */
+.footer-anim-mail {
+    color: #65676B;
+    position: absolute;
+    font-size: 2vh;
+    right: 7.4%;
+    bottom: -10%;
+    opacity: 0;
+    animation-name: mailanim;
+    animation-duration: 0.7s;
+    animation-delay: 2.5s;
+    animation-iteration-count: 1;
+    animation-timing-function: linear;
+    animation-fill-mode: forwards;
+}
+
+@keyframes mailanim {
+    0% {
+        bottom: -10%;
+        opacity: 0;
+    }
+
+    90% {
+        bottom: 7%;
+    }
+
+    100% {
+        bottom: 5.8%;
+        opacity: 1;
+    }
+}

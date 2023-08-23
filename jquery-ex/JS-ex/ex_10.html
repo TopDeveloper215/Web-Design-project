@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <title>ex_0</title>
+</head>
+<body>
+    <div>
+        <input type="text" id="num1">
+        <input type="text" id="num2">
+        <button id="but">calc</button>
+        <p id="result"></p>
+    </div>
+    <script>
+        $(document).ready(function(){
+            var a,b,sum = 0;
+            
+            $('#but').click(function(){
+                
+                a=$('#num1').val();
+                b=$('#num2').val();
+                for(let i=a; i<=b; i++)
+                {
+                    var flag = 0;
+                    for(j=2; j<i; j++)
+                    {
+                        var mod = i % j;
+                        if(mod == 0)
+                        {
+                            flag = 1;
+                            continue;
+                        }
+                        console.log(i);
+                        console.log(" and ");
+                        console.log(j);
+                    }
+                    if(flag == 0){
+                        sum = sum + parseInt(i);
+                    }
+                    console.log(i);
+                }
+                $('#result').html(sum); 
+                
+            })
+            
+        })
+    </script>
+</body>
+</html>

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="js/jquery-3.6.0.min.js"></script>
+    <title>ex_3</title>
+</head>
+<body>
+    <p>This code calculate sum of nth </p>
+    <p>s=-3+6-9+12-15+18...</p>
+    <input type="text" id="num1">
+    <button id="but">start</button>
+    <p id="result"></p>
+    <script>
+     var n, s=0 ;
+     var sign=1;
+     $(document).ready(function(){
+        $('#but').click(function(){
+        n = $('#num1').val();
+        n=parseInt(n);
+        console.log(n);
+        for(let i=1; i <= n; i++){
+            sign *= -1
+            console.log(sign);
+            s += 3 * sign * i;
+            s=parseInt(s);
+            
+        }
+        $('#result').html(s);
+        console.log(s);
+        })
+     })
+    </script>
+</body>
+</html>

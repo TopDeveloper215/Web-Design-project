@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .slideshow-container {
+            max-width: 100%;
+            position: relative;
+            margin: auto
+        }
+        .mySlides {
+            display: none;
+            height: 400px;
+            border: solid 1px black;
+            
+        }
+        /* .gallery-cell {
+        width: 66%;
+        height: 200px;
+        margin-right: 10px;
+        background: #8C8;
+        counter-increment: gallery-cell;
+        }
+
+        /* cell number */
+        /* .gallery-cell:before {
+        display: block;
+        text-align: center;
+        content: counter(gallery-cell);
+        line-height: 200px;
+        font-size: 80px;
+        color: white;
+        }  */
+
+        .prev,
+        .next {
+            cursor: pointer;
+            position: absolute;
+            top: 75%;
+            width: 10px;
+            margin-left: 10px;
+            padding: 16px;
+            color: #222428;
+            font-weight: bold;
+            font-size: 20px;
+            transition: all 750ms ease;
+           
+        }
+        .next {
+            right: 15px;
+            border-radius: 50px;
+        }
+        .prev {
+            left: 15px;
+            border-radius: 50px;
+        }
+        .prev:hover,
+        .next:hover {
+            color: #f2f2f2;
+            background-color: rgba(0, 0, 0, 0.8)
+        }
+
+
+
+        .active,
+        .dot:hover {
+            background-color: #717171;
+        }
+                .fade {
+            -webkit-animation-name: fade;
+            -webkit-animation-duration: 1.5s;
+            animation-name: fade;
+            animation-duration: 1.5s;
+                }
+        #slideset{
+            position: relative;
+            
+
+        }
+        @keyframes autoplay2 {
+        0% {left: 100%}
+        4% {left: 0%}
+        33.33% {left: 0%}
+        37.33% {left: -100%}
+        100% {left: -100%}
+        }
+        #slideset2 > *:nth-child(1) {animation-delay: 0s}
+        #slideset2 > *:nth-child(2) {animation-delay: 4s}
+        #slideset2 > *:nth-child(3) {animation-delay: 8s}
+        #slideset >*{
+            position: absolute;
+            
+            animation: 12s autoplay2 infinite ease-in-out;
+        }
+
+        /* @-webkit-keyframes fade {
+            from {
+                opacity: .4
+            }
+            to {
+                opacity: 1
+            }
+        }
+
+        @keyframes fade {
+            from {
+                opacity: .4
+            }
+            to {
+                opacity: 1
+            }
+        } */
+    </style>
+</head>
+<body>
+    <div class="slideshow-container">
+        <div class="slideshow-inner" id="slideset">
+          <div class="mySlides fade ">        
+            <img class="gallery-cell" src='image/slide_1.jpg' style='width: 100%;' alt="sally lightfoot crab"/> 
+          </div>        
+          <div class="mySlides fade">       
+            <img class="gallery-cell" src='image/slide_2.jpg' style='width: 100%;' alt="fighting nazca boobies"/>
+          </div>      
+          <div class="mySlides fade">    
+            <img class="gallery-cell" src='image/slide_3.jpg' style='width: 100%;' alt="otovalo waterfall"/>
+          </div> 
+        </div>
+          <a class="prev" onclick='plusSlides(-1)'>&#10094;</a>
+          <a class="next" onclick='plusSlides(1)'>&#10095;</a>
+    </div>
+    <br/>  
+
+    <script>
+        var slideIndex = 1;
+        var myTimer;
+        var slideshowContainer;
+        
+        window.addEventListener("load",function() {
+            showSlides(slideIndex);
+            myTimer = setInterval(function(){plusSlides(1)}, 2000);
+            //COMMENT OUT THE LINE BELOW TO KEEP ARROWS PART OF MOUSEENTER PAUSE/RESUME
+            slideshowContainer = document.getElementsByClassName('slideshow-inner')[0];
+            
+            //UNCOMMENT OUT THE LINE BELOW TO KEEP ARROWS PART OF MOUSEENTER PAUSE/RESUME
+            // slideshowContainer = document.getElementsByClassName('slideshow-container')[0];
+            // slideshowContainer.addEventListener('mouseenter', pause)
+            // slideshowContainer.addEventListener('mouseleave', resume)
+        })
+        // NEXT AND PREVIOUS CONTROL
+        function plusSlides(n){
+            clearInterval(myTimer);
+            if (n < 0){
+                showSlides(slideIndex -= 1);
+            } else {
+            showSlides(slideIndex += 1); 
+            }
+            //COMMENT OUT THE LINES BELOW TO KEEP ARROWS PART OF MOUSEENTER PAUSE/RESUME
+            if (n === -1){
+                myTimer = setInterval(function(){plusSlides(n + 2)}, 2000);
+            } else {
+                myTimer = setInterval(function(){plusSlides(n + 1)}, 2000);
+            }
+        }
+        //Controls the current slide and resets interval if needed
+        function currentSlide(n){
+            clearInterval(myTimer);
+            myTimer = setInterval(function(){plusSlides(n)}, 2000);
+            showSlides(slideIndex = n);
+            
+        }
+        function showSlides(n){
+            var i;
+            var slides = document.getElementsByClassName("mySlides");
+            // var dots = document.getElementsByClassName("dot");
+            if (n > slides.length) {slideIndex = 1}
+            if (n < 1) {slideIndex = slides.length}
+            for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";
+            }
+            // for (i = 0; i < dots.length; i++) {
+            //     dots[i].className = dots[i].className.replace(" active", "");
+            // }
+            slides[slideIndex-1].style.display = "block";
+            
+            // dots[slideIndex-1].className += " active";
+        }
+        pause = () => {
+        clearInterval(myTimer);
+        }
+        resume = () =>{
+        clearInterval(myTimer);
+        myTimer = setInterval(function(){plusSlides(slideIndex)}, 4000);
+        }
+    </script>
+</body>
+</html>

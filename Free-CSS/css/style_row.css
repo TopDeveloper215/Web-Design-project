@@ -1,0 +1,74 @@
+.uxos{
+    color: rgb(198, 198, 198);
+    font-weight: bold;
+    font-size:25px;
+    opacity: 0.7;
+   }
+   .uxos:hover{
+    opacity: 1;
+    cursor: pointer;
+   }
+   .prev,.next {
+    cursor: pointer;
+    position: absolute;
+    padding: 16px;
+    color: white;
+    font-weight: bold;
+    font-size: 28px;
+    z-index: 1;
+    background-color: #202324;
+    border-radius: 100px;
+
+}
+
+
+/* Position the "next button" to the right */
+
+.next {
+    right: 0;
+    margin-right: -18px;
+}
+
+
+/* On hover, add a black background color with a little bit see-through */
+
+.prev:hover,
+.next:hover {
+    background-color: rgba(50, 4, 236, 0.8);
+}
+.but{
+  width: 150px;
+  height:50px;
+  padding: 8px;
+  font-size:20px;
+  font-family: inherit;
+  opacity: 0.8;
+  border:none;
+  color: white;
+  background-color: rgb(30, 30, 81);
+}
+.but:hover{
+opacity: 1;
+}
+.but-1{
+    width: 200px;
+    height:50px;
+    padding: 8px;
+    font-size:20px;
+    font-family: inherit;
+    opacity: 0.8;
+    border:none;
+    color: white;
+    background-color: rgb(30, 30, 81);
+  }
+  .but-1:hover{
+  opacity: 1;
+  }
+.row_04_hover
+{
+  text-align: justify;
+}
+.row_04_hover:hover
+{
+  background-color: rgb(94, 3, 117);
+}

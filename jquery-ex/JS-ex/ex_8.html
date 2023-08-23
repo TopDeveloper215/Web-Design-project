@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="js/jquery-3.6.0.min.js"></script>
+    <title>Document</title>
+</head>
+<body>
+    <input type="text" id="num">
+    <button id="but">start</button>
+    <button id="calc">calc</button>
+    <button id="clear">clear</button>
+    <p id="result"></p>
+    <p id="res"></p>
+    <script>
+        $(document).ready(function(){
+            var sum = 0;
+            var n = 5;
+            $('#but').click(function(){
+                
+                    for(let a = 1; a < n; a++){
+                        for(let b = 1; b <= n; b++){
+                            for(let c = 1; c <= n; c++){
+                                for(let d = 1; d <= n; d++){
+                                    for(let e = 1; e <= n; e++){
+                                        var res = a * 10000 + b * 1000 + c * 100 + d * 10 + e;
+                                        if(res >= 21000 && a % 2 == 0 && e % 2==0){
+                                            
+                                            sum += res + ',';
+                                            $('#result').html(sum);
+
+
+                                        }
+                                        else{continue;}
+                                    }
+                                }
+                            }
+                        }
+                    } 
+                  
+                
+            })
+                
+            // var a, b = '', c = '';
+            // var q, n;
+            // var res = 0;
+            // $('#but').click(function(){
+            //     a = $('#num').val();
+            //     b += a + ','
+            //     $('#num').val('')
+            //     $('#result').html(b);
+            // })
+            // $('#calc').click(function(){
+            //     q= b.split(",")
+            //     console.log(q);
+            //     n = q.length;
+            //     console.log(n);
+            //     c = q;
+            //     for(var i=0;i<n-1;i++){
+            //         c[i] = parseInt(c[i]) ;
+            //         console.log(c[i]);
+            //         for(c[0]=2;c[0]<n-1;c[0]++){
+            //             for(c[1]=2;c[1]<n-1;c[1]++){
+            //                 for(c[2]=2;c[2]<n-1;c[2]++){
+            //                     for(c[3]=2;c[3]<n-1;c[3]++){
+            //                         for(c[4]=2;c[4]<n-1;c[4]++){
+            //                             res=c[0]*10000+c[1]*1000+c[2]*100+c[3]*10+c[4];
+            //                             var sum = 0;
+            //                             sum +=res;
+            //                         }
+            //                     }
+            //                 }
+            //             }
+            //         }
+            //     }
+                // for(var i =0; i < n-1; i++){
+                //     c[i] = parseInt(c[i]) ;
+                //     console.log(c[i]);
+                //     // var sum = 0;
+                //     // sum += i* 10000 + i* 1000 + i* 100 +i* 10 +i 
+                //     // $('#res').html(sum);
+                //     // console.log(sum);
+                //     if(c[i] % 2 == 0){
+
+                //     }
+                // }
+            // })
+            $('#clear').click(function(){
+                $('#result').html('');
+            })
+            
+        })
+    </script>
+</body>
+</html>

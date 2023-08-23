@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en">
+ 
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>Document</title>
+  <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+    integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+          }
+          body{
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+            background-image: url(background-img.jpg);
+            background-size: cover;
+            background-attachment: fixed;
+          }
+          .navbar{
+            height: 70px;
+            width: 100%;
+            padding: 19px 30px;
+            background-color: #731637;
+            position: relative;
+          }
+          .navbar .nav-header{
+            display: inline;
+          }
+          .navbar .nav-header .nav-logo{
+            display: inline-block;
+            margin-top: -7px;
+          }
+          .navbar .nav-links{
+            display: inline;
+            float: right;
+            font-size: 18px;
+          }
+
+          .navbar .nav-links a {
+            padding: 10px 12px;
+            text-decoration: none;
+            font-weight: 550;
+            color: white;
+          }
+          /* Hover effects */
+          .navbar .nav-links a:hover{
+            background-color: rgba(0, 0, 0, 0.3);
+          }
+           
+          /* responsive navbar toggle button */
+          .navbar #nav-check, .navbar .nav-btn{
+            display: none;
+          }
+           
+          @media (max-width:700px) {
+            .navbar .nav-btn{
+              display: inline-block;
+              position: absolute;
+              top: 0px;
+              right: 0px;
+            }
+            .navbar .nav-btn label {
+              display: inline-block;
+              width: 80px;
+              height: 70px;
+              padding: 25px;
+            }
+            .navbar .nav-btn label span {
+              display: block;
+              height: 10px;
+              width: 25px;
+              border-top: 3px solid #eee;
+            }
+            .navbar .nav-btn label:hover, .navbar #nav-check:checked ~ .nav-btn label {
+              background-color: rgb(9, 14, 90);
+              transition: all 0.5s ease;
+            }
+            .navbar .nav-links{
+              position: absolute;
+              display: block;
+              text-align: center;
+              width: 50%;
+              background-color: rgb(9, 14, 90);
+              transition: all 0.3s ease-in;
+              overflow-y: hidden;
+              top: 70px;
+              right: 0px;
+            }
+            .navbar .nav-links a {
+              display: block;
+            }
+           
+            /* when nav toggle button not checked */
+            .navbar #nav-check:not(:checked) ~ .nav-links {
+              height: 0px;
+            }
+           
+            /* when nav toggle button is checked */
+            .navbar #nav-check:checked ~ .nav-links {
+              height: calc(100vh - 70px);
+              overflow-y: auto;
+            }
+            .navbar .nav-links .loginBtn {
+              padding: 10px 40px ;
+              margin: 20px;
+              font-size:  18px;
+              font-weight: bold;
+              color: rgb(9, 14, 90);
+            }
+            /* Responsive dropdown code */
+            .navbar .nav-links .dropdown, .navbar .nav-links .dropdown2 {
+              float: none;
+              width: 100%;
+            }
+            .navbar .nav-links .drop-content, .navbar .nav-links .drop-content2 {
+              position: relative;
+              background-color: rgb(220, 220, 250);
+              top: 0px;
+              left: 0px;
+            }
+            /* Text color */
+            .navbar .nav-links .drop-content a {
+              color: rgb(9, 14, 90);
+            }  
+           
+          }
+           
+          /* Dropdown menu CSS code */
+          .dropdown{
+            position: relative;
+            display: inline-block;
+          }
+          .drop-content, .drop-content2 {
+            display: none;
+            position: absolute;
+            background-color: #363739;
+            min-width: 120px;
+            font-size: 16px;
+            top: 34px;
+            z-index: 1;
+            box-shadow: 0px 10px 25px rgba(0, 0, 0, 0.4);
+          }
+          /* on hover show dropdown */
+          .dropdown:hover .drop-content, .dropdown2:hover .drop-content2 {
+            display: block;
+          }
+          /* drondown links */
+          .drop-content a {
+            padding: 12px 10px;
+            border-bottom: 1px solid rgb(197, 197, 250);
+            display: block;
+            transition: all 0.5s ease !important;
+          }
+          .dropBtn .drop-content a:hover {
+            background-color: rgb(230, 230, 230);
+          }
+          .dropdown:hover .dropBtn, .dropdown2:hover .dropBtn2 {
+            background-color: rgba(0, 0, 0, 0.3);
+          }
+          .dropdown2 .drop-content2 {
+            position: absolute;
+            left: 120px;
+            top: 126px;
+          }
+          .dropBtn2 i {
+            margin-left: 15px;
+          }
+          .sub-menu{
+            display: block;
+          }
+          .nav-links:after{
+            content: '';
+            clear: both;
+            display: block;
+            }
+            .nav-links ul{
+            list-style: none;
+            margin: 0;
+            }
+          .nav-links > ul > li{
+            float: left;
+            position: relative;
+            }
+          
+          
+            .nav-links  ul li:hover a{
+              background: #34495e;
+              }
+              
+              .nav-links ul ul {
+              position: absolute;
+              padding: 0;
+              min-width: 160px;
+              display: none;
+              top: 100%;
+              left: 0;
+              box-shadow: 0 3px 15px rgba(0,0,0,0.5);
+              }
+              .nav-links ul li:hover > ul{
+              display: block;
+              }
+              .nav-links ul ul li:hover a{
+              background: #262626;
+              }
+              .nav-links ul ul li{
+              position: relative;
+              }
+              .nav-links ul ul ul{
+              top: 0;
+              left: 100%;
+              }
+              .nav-links ul ul ul li:hover a{
+              background: #34495e;
+              }
+
+    </style>
+</head>
+ 
+<body>
+  <div class="navbar">
+ 
+    <!-- Navbar logo -->
+
+ 
+    <!-- responsive navbar toggle button -->
+    <input type="checkbox" id="nav-check">
+    <div class="nav-btn">
+      <label for="nav-check">
+        <span></span>
+        <span></span>
+        <span></span>
+      </label>
+    </div>
+ 
+    <!-- Navbar items -->
+    <nav class="nav-links">
+
+
+ 
+      <!-- Dropdown menu -->
+      <li class="dropdown">
+        <a class="dropBtn" href="http://ngksteenwijk.nl">Wie wij zijn</a>
+        <ul class="drop-content" style="list-style: none;">  
+            <li id="menu-item-85" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-85"><a href="https://www.ngksteenwijk.nl/bestuur/">Moderamen &#038;<br/>kerkenraad</a></li>
+            <li id="menu-item-83" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-83"><a href="https://www.ngksteenwijk.nl/identiteit/">Identiteit</a></li>
+            <li id="menu-item-77" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-77"><a href="https://www.ngksteenwijk.nl/ons-geloof/">Ons geloof</a></li>
+            <li id="menu-item-75" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-75"><a href="https://www.ngksteenwijk.nl/pastoraat/">Pastoraat</a>
+                <ul class="sub-menu" >
+                    <li id="menu-item-6323" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-6323"><a href="https://www.ngksteenwijk.nl/pastoraat-tekst/">Pastoraat samenvatting</a></li>
+                    <li id="menu-item-6301" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-6301"><a href="https://www.ngksteenwijk.nl/overzicht-contactpersonen/">Overzicht contactpersonen</a></li>
+                </ul>
+            </li>
+            <li id="menu-item-76" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-76"><a href="https://www.ngksteenwijk.nl/onze-predikant/">Predikant</a></li>
+            <li id="menu-item-6312" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-6312"><a href="https://www.ngksteenwijk.nl/op-weg-blijven-naar-een-vitale-gemeente/">Op weg blijven naar een vitale gemeente / Handboek voor &#8216;samen gemeente zijn&#8217;</a></li>
+        </ul>
+      </li>
+      <div class="dropdown">
+        <a class="dropBtn" href="http://ngksteenwijk.nl/#">Kerkdiensten
+
+
+        </a>
+        <div class="drop-content" style="list-style: none;">
+            <li id="menu-item-185" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-185"><a href="https://www.ngksteenwijk.nl/archief-kerkdiensten/">Archief kerkdiensten</a></li>
+            <li id="menu-item-82" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-82"><a href="https://www.ngksteenwijk.nl/informatie-over-diensten/">Informatie over diensten</a></li>
+            <li id="menu-item-197" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-197"><a href="https://www.ngksteenwijk.nl/informatie-voor-predikant/">Informatie voor predikant</a></li>
+            <li id="menu-item-79" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-79"><a href="https://www.ngksteenwijk.nl/kerkrooster/">Kerkrooster</a></li>
+        </div>
+      </div>
+
+    </nav>
+ 
+  </div>
+</body>
+ 
+</html>

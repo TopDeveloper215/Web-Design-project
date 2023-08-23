@@ -1,0 +1,35 @@
+--Project URL--
+https://www.freelancer.com/projects/php/User-Campaign-Submission-Management/details
+
+Objectives
+• Allow users (individuals) to submit personal campaign using GiveWP.
+• Support login, registration, new campaign submission and campaign management through frontend dashboard. This extension must support GiveWP.
+
+Process Flow
+• Refer to PPT (https://docs.google.com/presentation/d/1eTOiDf8Rcb-aM1oIIvWP8imYGLgP_W3x/edit?usp=share_link&ouid=113773967592279618854&rtpof=true&sd=true)
+
+Campaign Submission and Dashboard
+• Reference for fundraiser dashboard (https://invis.io/7R132XH9S35E)
+
+GiveWP Documentation
+• https://givewp.com/documentation/core/
+• https://givewp.com/documentation/developers/
+--WP-admin--
+
+https://givekindness.xyz/demog/wp-admin/
+admin: wadmin
+pass: givekindnessxyz
+
+
+-cPanel Info--
+
+https://sg8.fcomet.com:2083/
+id: givekind
+pass: u89dj5aYH6
+
+Basically, this add-on should
+1) a frontend to allow user to submit new campaign for approval
+2) once approved by admin, the user/fundraiser can view, edit, or publish his campaign
+In the frontend, the fundraiser can also see the donation he had collected for each campaign he had created.
+A fundraiser can also be a donor too
+After this add-on is completed, there should be another add-on to be built. The new add-on will be a frontend dashboard for the campaign manager / admin to manage all campaigns such as approve campaigns, suspend campaign, view donations of each campaigns etc

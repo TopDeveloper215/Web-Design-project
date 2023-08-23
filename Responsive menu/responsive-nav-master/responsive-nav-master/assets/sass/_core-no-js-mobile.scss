@@ -1,0 +1,13 @@
+@import "config";
+
+// No-js fallback for mobile only
+// Add "nav-no-js" class to <html>
+
+.#{$nav-no-js} {
+  .nav-button:hover + .nav,
+  .nav:hover,
+  .nav-button:hover + .nav + .nav-close,
+  .nav:hover + .nav-close {
+    display: block; // Open nav and show close button
+  }
+}

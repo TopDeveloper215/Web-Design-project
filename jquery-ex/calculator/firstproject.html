@@ -1,0 +1,74 @@
+
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    </head>
+<body>
+    <input type="text" name="num" id="mun">
+    <button id="add">+</button>
+    <button id="munus">-</button>
+    <button id="multiply">*</button>
+    <button id="divide">%</button>
+    <button id="result">=</button>
+    <script>
+        $(document).ready(function(){
+            var a, b, c, d, e, f;
+            $("#add").click(function(){ 
+                a = $('#mun').val();
+                c = 1;
+                $('#mun').val('');
+                if($("#result").click){
+                    b = $('#mun').val();
+                    console.log(b);
+                    d = parseFloat(a) + parseFloat(b);
+                    $('#mun').val(d);
+                }
+                
+                else if($("#munus").click)(function(){
+                    $('#mun').val('');
+                    f = $('#mun').val();
+
+                    d = parseFloat(a) + parseFloat(b)-parseFloat(f);
+                    $('#mun').val(d);
+                });
+            });
+            $("#munus").click(function(){ 
+                a = $('#mun').val();
+                c = 2;
+                $('#mun').val('');
+            });
+            $("#multiply").click(function(){ 
+                a = $('#mun').val();
+                c = 3;
+                $('#mun').val('');
+            });
+            $("#divide").click(function(){ 
+                a = $('#mun').val();
+                c = 4;
+                $('#mun').val('');
+            });
+            // $("#result").click(function(){ 
+            //     b = $('#mun').val();
+            //     if(c == 1){
+            //         d = parseFloat(a) + parseFloat(b);
+            //         $('#mun').val(d);
+            //     } else if(c == 2){
+            //         d = parseFloat(a) - parseFloat(b);
+            //         $('#mun').val(d);
+            //     } else if(c == 3){
+            //         d = parseFloat(a) * parseFloat(b);
+            //         $('#mun').val(d);
+            //     } else{
+            //         d = parseFloat(a) / parseFloat(b);
+            //         $('#mun').val(d);
+            //     }
+            // });
+        });
+    </script>
+<body>
+</html>

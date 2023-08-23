@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="js/jquery-3.6.0.min.js"></script>
+    <title>ex_5</title>
+</head>
+<body>
+    <p>This code calculate date</p>
+    <input type="text" id="num1">
+    <input type="text" id="num2">
+    <button id="but">start</button>
+    <p id="result">ww</p>
+    <p id="res">ww</p>
+    <script>
+     $(document).ready(function() {
+        $('#but').click(function() {
+            var a, b, c;
+            a = parseInt($('#num1').val());
+            b = parseInt($('#num2').val());
+            if(a > b) {
+                c = a;
+                a = b;
+                b = c;
+            }
+            for (var i = a; i >= 1; i --) {
+                if(b % i == 0 && a % i == 0) {
+                    $('#result').html(i);
+                    break;
+                }
+            }
+            for (var j = b; j <= a * b; j ++) {
+                if (j % a == 0 && j % b == 0) {
+                    $('#res').html(j);
+                    break;
+                }
+            }
+        })
+            
+     })
+    </script>
+</body>
+</html>

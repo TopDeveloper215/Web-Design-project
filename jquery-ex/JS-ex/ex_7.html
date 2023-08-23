@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="js/jquery-3.6.0.min.js"></script>
+    <title>ex_7</title>
+</head>
+<body>
+    <input type="text" id="num1">
+    <button id="but">start</button>
+    <p id="display"></p>
+    <p id="dis"></p>
+    <script>
+        $(document).ready(function(){
+            
+            
+            $('#but').click(function(){
+                for (let a = 0; a <= 9; a++){
+                    for (let b = 0; b <= 9; b++){
+                        for (let c = 0; c <= 9; c++){
+                            var aba = parseInt( a * 100 + b * 10 + a );
+                            var cbc = parseInt (c * 100 + b * 10 + c);
+                        // console.log(aba);
+                        // console.log(cbc);
+                        inp=$('#num1').val()
+                            if(aba * cbc == parseInt(inp)){
+                            
+                                var sum  = aba;
+                                var sum1 = cbc;
+
+
+                                $('#display').html(sum);
+                                $('#dis').html(sum1);
+                            }
+                    
+
+                    }
+
+                }
+
+            }
+            })
+            
+            
+            // a=$('#num1').val();
+            // b=$('#num2').val();
+
+
+        })
+    </script>
+
+</body>
+</html>

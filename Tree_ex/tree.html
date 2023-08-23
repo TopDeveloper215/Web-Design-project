@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/style_tree.css">
+    <link rel="stylesheet" href="css/style_dropdown.css">
+    <link rel="stylesheet" href="css/style_slideshow.css">
+</head>
+
+<body onload="startTime()" style="background-color: rgb(140, 194, 131);">
+    <!--header-->
+    <div style="width: 100%; height: 150px;margin: 0;padding: 0;background-image: url(imgdata/10.png);">
+        <marquee behavior="alternate" direction="rtl">
+            <p align="center" style="font-size: 70px;margin-top: 40px; font-family: Edwardian Script ITC; color: red;border:2px white;">Welcome to visit of you!</p>
+        </marquee>
+    </div>
+    <!--clock display-->
+    <div id="txt" style="float: right; font-size: 25px; color: rgb(47, 0, 255);"></div>
+
+    <!--dropdown content-->
+
+    <div class="navbar" style="margin-top: 28px;margin-right: -172px;">
+        <a href="tree.html">First Page</a>
+        <a href="">News</a>
+        <div class="dropdown">
+            <button class="dropbtn">Data 
+            <!-- <i class="fa fa-caret-down"></i> -->
+          </button>
+            <div class="dropdown-content">
+                <a href="Book.html" target="_blank">Book</a>
+                <a href="Music.html" target="_blank">Music</a>
+                <a href="Video.html" target="_blank">Video</a>
+            </div>
+        </div>
+    </div>
+    <!--slideshow-->
+    <div class="slideshow-container" style="margin-top: 50px;">
+
+        <div class="mySlides fade">
+            <img src="imgdata/slideshow/slide-1.jpg" class="img-circle">
+        </div>
+
+        <div class="mySlides fade">
+            <img src="imgdata/slideshow/slide-2.jpg" style="width:100%">
+        </div>
+
+        <div class="mySlides fade">
+            <img src="imgdata/slideshow/slide-3.jpg" style="width:100%">
+        </div>
+
+        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+    </div>
+    <br>
+
+    <script>
+        var slideIndex = 1;
+        showSlides(slideIndex);
+
+        function plusSlides(n) {
+            showSlides(slideIndex += n);
+        }
+
+        function currentSlide(n) {
+            showSlides(slideIndex = n);
+        }
+
+        function showSlides(n) {
+            var i;
+            var slides = document.getElementsByClassName("mySlides");
+            if (n > slides.length) {
+                slideIndex = 1
+            }
+            if (n < 1) {
+                slideIndex = slides.length
+            }
+            for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";
+            }
+            slides[slideIndex - 1].style.display = "block";
+        }
+    </script>
+    <table style="border:1px solid black;">
+        <tr>
+            <th style="border:1px solid black;">userid</th>
+            <th style="border:1px solid black;">username</th>
+            <th style="border:1px solid black;">password</th>
+        </tr>
+        <tr>
+            <th style="border:1px solid black;">326</th>
+            <th style="border:1px solid black;">S4N-954</th>
+            <th style="border:1px solid black;">215</th>
+        </tr>
+    </table>
+    <!--tree view-->
+    <div style="margin-top:30px;">
+        <ul id="myUL">
+            <li><span class="box">Total</span>
+                <ul class="nested">
+                    <li style="margin-left: 27px;">Army</li>
+                    <li style="margin-left: 27px;">Physics</li>
+                    <li style="margin-left: 27px;"><span class="box">Culture</span>
+                        <ul class="nested">
+                            <li>novel</li>
+                            <li>book</li>
+                            <li><span class="box">sport</span>
+                                <ul class="nested">
+                                    <li>volleyball</li>
+                                    <li>football</li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </li>
+        </ul>
+    </div>
+
+    <!--clock display code-->
+    <script>
+        function startTime() {
+            const today = new Date();
+            let a = today.getFullYear();
+            let b = today.getMonth();
+            let c = today.getDate();
+            let d = today.getHours();
+            let e = today.getMinutes();
+            let f = today.getSeconds();
+            e = checkTime(e);
+            f = checkTime(f);
+            document.getElementById('txt').innerHTML = a + "." + (b + 1) + "." + c + "." + d + ":" + e + ":" + f;
+            setTimeout(startTime, 1000);
+        }
+
+        function checkTime(i) {
+            if (i < 10) {
+                i = "0" + i
+            }; // add zero in front of numbers < 10
+            return i;
+        }
+    </script>
+    <!--tree view display-->
+    <script>
+        var toggler = document.getElementsByClassName("box");
+        var i;
+        for (i = 0; i < toggler.length; i++) {
+
+            toggler[i].addEventListener("click", function() {
+                this.parentElement.querySelector(".nested").classList.toggle("active");
+                this.classList.toggle("check-box");
+            });
+        }
+    </script>
+
+</body>
+
+</html>
+<!--database-->
+<!--<p align="center" style="font-size: 70px;margin-top: -0px; font-family: Arial; color: rgb(25, 48, 221);">Database</p>-->

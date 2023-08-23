@@ -1,0 +1,71 @@
+
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    </head>
+<body>
+    <input type="text" name="num" id="num">
+    <button id="add">+</button>
+    <button id="munus">-</button>
+    <button id="multiply">*</button>
+    <button id="divide">%</button>
+    <button id="result">=</button>
+    <script>
+        $(document).ready(function(){
+            var a, b = 0;
+            $("#add").click(function(){ 
+                if(b == 0){
+                    a = $('#num').val() + "+";
+                    b = 1;
+                } else if(b == 1){
+                    a = a + $('#num').val() + "+";
+                    b = 2;
+                }
+                $('#num').val('');
+            });
+            $("#munus").click(function(){ 
+                if(b == 0){
+                    a = $('#num').val() + "-";
+                    b = 1;
+                } else if(b == 1){
+                    a = a + $('#num').val() + "-";
+                    b = 2;
+                } 
+                $('#num').val('');
+            });
+            $("#multiply").click(function(){ 
+                if(b == 0){
+                    a = $('#num').val() + "*";
+                    b = 1;
+                } else if(b == 1){
+                    a = a + $('#num').val() + "*";
+                    b = 2;
+                }
+                $('#num').val('');
+            });
+            $("#divide").click(function(){ 
+                if(b == 0){
+                    a = $('#num').val() + "/";
+                    b = 1;
+                } else if(b == 1){
+                    a = a + $('#num').val() + "/";
+                    b = 2;
+                } 
+                $('#num').val('');
+            });
+            $("#result").click(function(){ 
+                a = a + $('#num').val();
+                console.log(a);
+                a = eval(a);
+                console.log(a);
+                $('#num').val(a);
+            });
+        });
+    </script>
+<body>
+</html>

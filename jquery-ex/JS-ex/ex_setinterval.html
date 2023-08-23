@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="js/jquery-3.6.0.min.js"></script>
+</head>
+<body>
+    <p id="op"></p>
+    <button id="but">23</button>
+    <script>
+//         function setInterval(ttt, 1000);
+
+// function ttt() {
+//   document.getElementById("demo").innerHTML += "Hello";
+// }
+        $(document).ready(function(){
+
+                const sss = setInterval(ttt, 1000);
+                function ttt(){
+                    const date = new Date();
+                    $('#op').html(date);
+
+                };
+                $('#but').click(ttt);
+                clearInterval(sss);
+
+            // $('#but').click(function ttt(){
+                
+                
+            // });
+            
+            
+            
+        
+         });
+        
+    </script>
+
+</body>
+</html>

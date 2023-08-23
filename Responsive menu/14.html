@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            margin: 0;
+            padding: 0;
+            font-family:poppins;
+            background: #00A8FF;
+            height: 100vh;
+            }
+            a{
+            font-size: 12px;
+            text-transform: uppercase;
+            }
+            .nav-area{
+            background: #262626;
+            }
+            .nav-area:after{
+            content: '';
+            clear: both;
+            display: block;
+            }
+            .nav-area ul{
+            list-style: none;
+            margin: 0;
+            }
+            .menu {
+            width: 500px;
+            margin: 0 auto !important;
+            }        
+            .nav-area > ul > li{
+            float: left;
+            position: relative;
+            }
+            .nav-area ul li a {
+            text-decoration: none;
+            color: #fff;
+            padding: 15px 20px;
+            display: block;
+            font-weight: 500;
+            letter-spacing: 1px;
+            }
+            .nav-area ul li:hover a{
+            background: #34495e;
+            }
+            
+            .nav-area ul ul {
+            position: absolute;
+            padding: 0;
+            min-width: 160px;
+            display: none;
+            top: 100%;
+            left: 0;
+            box-shadow: 0 3px 15px rgba(0,0,0,0.5);
+            }
+            .nav-area ul li:hover > ul{
+            display: block;
+            }
+            .nav-area ul ul li:hover a{
+            background: #262626;
+            }
+            .nav-area ul ul li{
+            position: relative;
+            }
+            .nav-area ul ul ul{
+            top: 0;
+            left: 100%;
+            }
+            .nav-area ul ul ul li:hover a{
+            background: #34495e;
+            }
+            
+    </style>
+</head>
+<body>
+    <nav class="nav-area">
+        <ul class="menu">
+        <li><a href="http://ngksteenwijk.nl">Wie wij zijn</a>
+          <ul>
+            <li id="menu-item-85" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-85"><a href="https://www.ngksteenwijk.nl/bestuur/">Moderamen &#038;<br/>kerkenraad</a></li>
+            <li id="menu-item-83" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-83"><a href="https://www.ngksteenwijk.nl/identiteit/">Identiteit</a></li>
+            <li id="menu-item-77" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-77"><a href="https://www.ngksteenwijk.nl/ons-geloof/">Ons geloof</a></li>
+            <li id="menu-item-75" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-75"><a href="https://www.ngksteenwijk.nl/pastoraat/">Pastoraat</a>
+                <ul class="sub-menu" >
+                    <li id="menu-item-6323" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-6323"><a href="https://www.ngksteenwijk.nl/pastoraat-tekst/">Pastoraat samenvatting</a></li>
+                    <li id="menu-item-6301" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-6301"><a href="https://www.ngksteenwijk.nl/overzicht-contactpersonen/">Overzicht contactpersonen</a></li>
+                </ul>
+            </li>
+            <li id="menu-item-76" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-76"><a href="https://www.ngksteenwijk.nl/onze-predikant/">Predikant</a></li>
+            <li id="menu-item-6312" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-6312"><a href="https://www.ngksteenwijk.nl/op-weg-blijven-naar-een-vitale-gemeente/">Op weg blijven naar een vitale gemeente / Handboek voor &#8216;samen gemeente zijn&#8217;</a></li>
+          </ul>
+        </li>
+        <li><a href="#">Portfolio</a></li>
+        <li><a href="#">Contact</a></li>
+        </ul>
+        </nav>
+</body>
+</html>
+

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="js/jquery-3.6.0.min.js"></script>
+    
+    <title>ex_1</title>
+</head>
+<body>
+
+    <input type="text" id="num1">
+    <input type="text" id="num2">
+    <input type="text" id="num3">
+    <button id="but">start</button>
+    <p id="result"></p>
+    <script>
+        $(document).ready(function (){
+            var a, b, c, S;
+            
+            
+            
+            $('#but').click(function(){
+                a = $('#num1').val();
+                b = $('#num2').val();
+                c = $('#num3').val();
+                a = parseInt(a);
+                b = parseInt(b);
+                c = parseInt(c);
+                console.log(a);
+                console.log(b);
+                console.log(c);
+                if(a + b > c && a + c > b && b + c > a){
+                // alert("Ok");
+                var  p = (a + b + c)/2;
+                console.log(p);
+                S =Math.sqrt(p * (p - a) * (p - b) * (p - c));
+                $('#result').html(S)
+            }
+            else{
+                alert('This Problem can not calc');
+            }
+            })
+            
+        })
+    </script>
+</body>
+</html>

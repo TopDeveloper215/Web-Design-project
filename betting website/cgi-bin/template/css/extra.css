@@ -1,0 +1,102 @@
+/*****Helper Styles*****/
+
+/*margin*/
+.ml3 { margin-left: 3px; }
+.ml5 { margin-left: 5px; }
+.ml7 { margin-left: 7px; }
+.ml10 { margin-left: 10px; }
+.mr0 { margin-right: 0 !important; }
+.mr2 { margin-right: 2px; }
+.mr5 { margin-right: 5px; }
+.mr7 { margin-right: 7px; }
+.mr15 { margin-right: 15px; }
+.mr10 { margin-right: 10px; }
+.m0 { margin: 0; }
+.m5 { margin: 5px; }
+.mb0 { margin-bottom: 0; }
+.mb2 { margin-bottom: 2px; }
+.mb3 { margin-bottom: 3px; }
+.mb5 { margin-bottom: 5px; }
+.mb10 { margin-bottom: 10px !important; }
+.mb20 { margin-bottom: 20px !important; }
+.mb35 { margin-bottom: 35px;}
+.mb55 { margin-bottom: 55px; }
+.mb-10 { margin-bottom: -10px; }
+.mt0 { margin-top: 0; }
+.mt2 { margin-top: 2px; }
+.mt3 { margin-top: 3px; }
+.mt5 { margin-top: 5px; }
+.mt10 { margin-top: 10px; }
+.mt15 { margin-top: 15px; }
+.mt-10 { margin-top: -10px; }
+
+/*padding*/
+.pad10 { padding: 10px; }
+
+/* letter-spacing*/
+.ls5 { letter-spacing: .5px; }
+
+/*line-height*/
+.lh16 { line-height: 1.6; }
+
+/* font-weight*/
+.fw500 { font-weight: 500; }
+
+/*width, max-width*/
+.w150 { width: 150px; }
+.w220 { width: 220px; }
+.w230 { width: 230px; }
+.w240 { width: 240px; }
+.w250 { width: 250px; }
+.mw200 { max-width: 200px !important; }
+.mw210 { max-width: 210px !important; }
+.mw250 { max-width: 250px !important; }
+
+/*text size*/
+.fs09 { font-size: 0.9em !important; }
+.fs14 { font-size: 14px; }
+.fs15 { font-size: 15px; }
+.fs16 { font-size: 16px; }
+.fs17 { font-size: 17px; }
+
+/*colors*/
+.blue-1 { color: #115b80; }
+.seagreen { color: seagreen; }
+.indianred { color: indianred !important; }
+.darkgreen { color: darkgreen !important; }
+
+.fc {
+  display: flex;
+  align-items: center;
+}
+
+.fc-2 {
+  display: flex;
+  justify-content: center;
+}
+
+.fcc {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.fccw {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.talc_tawc {
+  text-align: center;
+  text-align: -webkit-center;
+}
+
+.none { display: none; }
+.d-none { display: none !important; }
+.d-flex { display: flex; }
+
+/*fonts*/
+.sofia { font-family: 'Sofia Sans Semi Condensed'; }
+.anuphan { font-family: 'Anuphan', sans-serif; }

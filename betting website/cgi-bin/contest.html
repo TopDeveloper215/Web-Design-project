@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>MINE BNB - Contest</title>
+  <meta name="description" content="MINE BNB - from 150% to 200% profit in 10 days">
+  <meta name="keywords" content="Mining, Big earnings, 15% daily, 16% daily, 18% daily, 20% daily, 150% ROI, 160% ROI, 180% ROI, 200% ROI, Earn, Earn Crypto, Crypto, BNB mining, BNB miner, BNB, BNB, BNB earn, earn BNB, earn BNB without investments"/>
+  <!--Icon-->
+  <link rel="shortcut icon" href="template/img/icon.png" type="image/png">
+  <!--Materialize-->
+  <link rel="stylesheet" href="libs/materialize.min.css" type="text/css"/>
+  <!--Icons FontAwesome-->
+  <script src="https://kit.fontawesome.com/84d745b22f.js" crossorigin="anonymous"></script>
+  <!--Splide (carousel)-->
+  <link rel="stylesheet" href="libs/splide.min.css" type="text/css"/>
+  <!--My Css-->
+  <link rel="stylesheet" href="template/css/other.css" type="text/css"/>
+  <link rel="stylesheet" href="template/css/main.css" type="text/css"/>
+  <link rel="stylesheet" href="template/css/extra.css" type="text/css"/>
+  <link rel="stylesheet" href="template/css/media.css" type="text/css"/>
+</head>
+<body>
+  <!--preloader-->
+  <div class="preloader">
+    <div class="loader">
+      <p class="heading"><img src="template/img/icon.png" class="mr10" style="margin-top: 1px;" width="32px">MINE BNB</p>
+      <div class="loading">
+        <div class="load"></div>
+        <div class="load"></div>
+        <div class="load"></div>
+        <div class="load"></div>
+      </div>
+    </div>
+  </div>
+  <!--preloader-->
+  <div class="wrapper">
+    <header>
+      <div class="header">
+        <div class="header-menu">
+          <div class="">
+            <img src="template/img/home.png" class="mr5" width="32px">
+            <a href="/" class="site-name">MINE BNB</a>
+          </div>
+          <div class="">
+            <ul class="ul-pc-menu">
+
+  <li><a href="/profile"><img src="template/img/icons/profile.png">Profile</a></li>
+  <li><a href="/deposit"><img src="template/img/icons/deposit.png">Deposit</a></li>
+  <li><a href="/withdraw"><img src="template/img/icons/withdraw.png">Withdraw</a></li>
+  <li><a href="/bonus"><img src="template/img/icons/bonus.png">Bonus</a></li>
+  <li><a href="/ptcads"><img src="template/img/icons/ptc.png">PTC Ads</a></li>
+  <li class="pc-none"><a href="/shortlinks"><img src="template/img/icons/shortlinks.png">Shortlinks</a></li>
+  <li class="pc-none"><a href="/quests"><img src="template/img/icons/quests.png">Quests</a></li>
+  <li class="pc-none"><a href="/contest"><img src="template/img/icons/contest.png">Contest</a></li>
+  <li class="pc-none"><a href="/bounty"><img src="template/img/icons/bounty.png">Bounty</a></li>
+  <li class="pc-none"><a href="/referrals"><img src="template/img/icons/referrals.png">Referrals</a></li>
+  <li class="mr0 pc-none"><form action data-operation="logout"><a onclick="sendAjax(this)"><img src="template/img/icons/logout.png">Logout</a></form></li>
+
+  <!-- from PC I hide 3 tabs and make them in the menu-->
+  <li class="pc-show additional-menu"><i class="fa-solid fa-ellipsis" onclick="showAddMenu()"></i></li>
+  <div id="addMenu" class="d-none">
+    <li><a href="/shortlinks"><img src="template/img/icons/shortlinks.png">Shortlinks</a></li>
+    <li><a href="/quests"><img src="template/img/icons/quests.png">Quests</a></li>
+    <li><a href="/contest"><img src="template/img/icons/contest.png">Contest</a></li>
+    <li><a href="/bounty"><img src="template/img/icons/bounty.png">Bounty</a></li>
+    <li><a href="/referrals"><img src="template/img/icons/referrals.png">Referrals</a></li>
+    <li><form action data-operation="logout"><a onclick="sendAjax(this)"><img src="template/img/icons/logout.png">Logout</a></form></li>
+  </div>
+
+            </ul>
+            <!--mobile-->
+            <div class="mob-menu">
+              <label for="burger" class="burger">
+                <input id="burger" onclick="showMobMenu()">
+                <span></span>
+                <span></span>
+                <span></span>
+              </label>
+            </div>
+            <a href="https://t.me/mineBNB_news" target="_blank" class="icon-tg-menu"><img src="template/img/telegram.png" width="32px"></a>
+          </div>
+        </div>
+        <!--mobile-->
+        <div class="right-mob-menu">
+          <ul class="ul-mob-menu">
+
+  <li><a href="/profile"><img src="template/img/icons/profile.png">Profile</a></li>
+  <li><a href="/deposit"><img src="template/img/icons/deposit.png">Deposit</a></li>
+  <li><a href="/withdraw"><img src="template/img/icons/withdraw.png">Withdraw</a></li>
+  <li><a href="/bonus"><img src="template/img/icons/bonus.png">Bonus</a></li>
+  <li><a href="/ptcads"><img src="template/img/icons/ptc.png">PTC Ads</a></li>
+  <li class="pc-none"><a href="/shortlinks"><img src="template/img/icons/shortlinks.png">Shortlinks</a></li>
+  <li class="pc-none"><a href="/quests"><img src="template/img/icons/quests.png">Quests</a></li>
+  <li class="pc-none"><a href="/contest"><img src="template/img/icons/contest.png">Contest</a></li>
+  <li class="pc-none"><a href="/bounty"><img src="template/img/icons/bounty.png">Bounty</a></li>
+  <li class="pc-none"><a href="/referrals"><img src="template/img/icons/referrals.png">Referrals</a></li>
+  <li class="mr0 pc-none"><form action data-operation="logout"><a onclick="sendAjax(this)"><img src="template/img/icons/logout.png">Logout</a></form></li>
+
+  <!-- from PC I hide 3 tabs and make them in the menu-->
+  <li class="pc-show additional-menu"><i class="fa-solid fa-ellipsis" onclick="showAddMenu()"></i></li>
+  <div id="addMenu" class="d-none">
+    <li><a href="/shortlinks"><img src="template/img/icons/shortlinks.png">Shortlinks</a></li>
+    <li><a href="/quests"><img src="template/img/icons/quests.png">Quests</a></li>
+    <li><a href="/contest"><img src="template/img/icons/contest.png">Contest</a></li>
+    <li><a href="/bounty"><img src="template/img/icons/bounty.png">Bounty</a></li>
+    <li><a href="/referrals"><img src="template/img/icons/referrals.png">Referrals</a></li>
+    <li><form action data-operation="logout"><a onclick="sendAjax(this)"><img src="template/img/icons/logout.png">Logout</a></form></li>
+  </div>
+
+          </ul>
+          <img src="template/img/icons/close.png" class="close-mob-menu" onclick="closeMobMenu()" width="32px">
+        </div>
+      </div>
+    </header>
+    <main>
+      <div class="main">
+        <div id="upPage">
+
+<!-- timer -->
+<script type="text/javascript">
+function addTimer(id, targetDate) {
+
+  let myInt = setInterval(function() {
+
+    var diff = new Date(targetDate - new Date());
+    var hours = diff.getUTCHours();
+    var mins = diff.getUTCMinutes();
+    var secs = diff.getUTCSeconds();
+
+    if(diff > 0) {
+      var displaytime = pad(hours) + ':' +  pad(mins) + ':' + pad(secs);
+      document.querySelector("[data-short='"+id+"']").innerHTML = displaytime;
+    } else {
+      setTimeout(() => { clearInterval(myInt); window.location.reload(); }, 1000)
+    }
+
+  }, 1000);
+}
+
+function pad(num) {
+  return num > 9 ? num : '0' + num;
+}
+</script>
+
+<div class="content-block">
+
+  <div class="contest-block mt-10">
+
+    <div class="top-contest">
+      <img src="template/img/contest.png" width="200px">
+      <div class="">
+        <p class="head">Competition for 5,000 BNB</p>
+                  <p class="fs16">
+            We are launching a contest for <span>5000 BNB</span> to be raffled off among <span>10 winners</span>.
+            To win the competition, you must earn the most points. Points are given for deposits, ad views, short links and referrals.
+            The contest will last until <span>May 20, 20:00 GMT</span>.
+          </p>
+              </div>
+    </div>
+
+    <div class="middle-contest">
+      <p class="head"><i class="fa-solid fa-diamond mr5"></i>How to collect points?</p>
+      <p class="desc">
+        <span><i class="fa-solid fa-square-plus mr5"></i><b class="fw500">1 point</b> for each deposited 1 BNB (ad balance also counts).</span>
+        <span><i class="fa-solid fa-square-plus mr5"></i><b class="fw500">1 point</b> for every 1 viewed ad from "PTC AD".</span>
+        <span><i class="fa-solid fa-square-plus mr5"></i><b class="fw500">1 point</b> for every 1 shortlink viewed from "Shortlinks".</span>
+        <span><i class="fa-solid fa-square-plus mr5"></i><b class="fw500">1 point</b> for every 1 BNB invested by a level 1 referral.</span>
+      </p>
+    </div>
+
+    <div class="bottom-contest">
+      <p><i class="fa-regular fa-star mr5"></i>You have 2 points</p>
+      <p><i class="fa-regular fa-star mr5"></i>You are in 1933th place</p>    </div>
+
+    <div class="leaderboard-contest">
+      <div class="history-block">
+
+        <div class="table">
+          <div class="table-name">
+            <p><i class="fa-solid fa-trophy mr5"></i>LEADERBOARD</p>
+          </div>
+          <div class="table-content">
+            <table class="centered highlight">
+
+              <thead>
+                <tr>
+                  <th>Place</th>
+                  <th>Wallet</th>
+                  <th>User ID</th>
+                  <th>Points</th>
+                  <th>Prize</th>
+                </tr>
+              </thead>
+
+              <tbody>
+                                <tr>
+                  <td><p class="place">1</p></td>
+                  <td>TEh8Bk9*****</td>
+                  <td>#14450</td>
+                  <td>9517<img src="template/img/user/contest_points.png" width="18px" class="ml5 mt2"></td>
+                  <td class="anuphan fw500">2000<span id="BNB"></span></td>
+                </tr>
+                                <tr>
+                  <td><p class="place">2</p></td>
+                  <td>TRr2VwZ*****</td>
+                  <td>#19522</td>
+                  <td>9420<img src="template/img/user/contest_points.png" width="18px" class="ml5 mt2"></td>
+                  <td class="anuphan fw500">1200<span id="BNB"></span></td>
+                </tr>
+                                <tr>
+                  <td><p class="place">3</p></td>
+                  <td>TXYJUdW*****</td>
+                  <td>#366</td>
+                  <td>4490<img src="template/img/user/contest_points.png" width="18px" class="ml5 mt2"></td>
+                  <td class="anuphan fw500">600<span id="BNB"></span></td>
+                </tr>
+                                <tr>
+                  <td><p class="place">4</p></td>
+                  <td>TD9WhVc*****</td>
+                  <td>#15426</td>
+                  <td>3518<img src="template/img/user/contest_points.png" width="18px" class="ml5 mt2"></td>
+                  <td class="anuphan fw500">400<span id="BNB"></span></td>
+                </tr>
+                                <tr>
+                  <td><p class="place">5</p></td>
+                  <td>TKffdkK*****</td>
+                  <td>#17101</td>
+                  <td>3287<img src="template/img/user/contest_points.png" width="18px" class="ml5 mt2"></td>
+                  <td class="anuphan fw500">300<span id="BNB"></span></td>
+                </tr>
+                                <tr>
+                  <td><p class="place">6</p></td>
+                  <td>TNkh5Px*****</td>
+                  <td>#9141</td>
+                  <td>2229<img src="template/img/user/contest_points.png" width="18px" class="ml5 mt2"></td>
+                  <td class="anuphan fw500">200<span id="BNB"></span></td>
+                </tr>
+                                <tr>
+                  <td><p class="place">7</p></td>
+                  <td>TQufWv2*****</td>
+                  <td>#12353</td>
+                  <td>1923<img src="template/img/user/contest_points.png" width="18px" class="ml5 mt2"></td>
+                  <td class="anuphan fw500">100<span id="BNB"></span></td>
+                </tr>
+                                <tr>
+                  <td><p class="place">8</p></td>
+                  <td>TMxPQvQ*****</td>
+                  <td>#12425</td>
+                  <td>1578<img src="template/img/user/contest_points.png" width="18px" class="ml5 mt2"></td>
+                  <td class="anuphan fw500">100<span id="BNB"></span></td>
+                </tr>
+                                <tr>
+                  <td><p class="place">9</p></td>
+                  <td>TLbV4ui*****</td>
+                  <td>#18929</td>
+                  <td>1314<img src="template/img/user/contest_points.png" width="18px" class="ml5 mt2"></td>
+                  <td class="anuphan fw500">50<span id="BNB"></span></td>
+                </tr>
+                                <tr>
+                  <td><p class="place">10</p></td>
+                  <td>TRe3u4b*****</td>
+                  <td>#12990</td>
+                  <td>1041<img src="template/img/user/contest_points.png" width="18px" class="ml5 mt2"></td>
+                  <td class="anuphan fw500">50<span id="BNB"></span></td>
+                </tr>
+                              </tbody>
+
+            </table>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="status-contest">
+              <p><i class="fa-solid fa-chart-line mr5 darkgreen"></i>The competition is active, take part and win!</p>
+          </div>
+
+  </div>
+
+</div>
+
+    </div>
+  </div>
+</main>
+<footer>
+  <div class="footer">
+    MINEBNB.PRO © 2023 ALL RIGHTS RESERVED
+  </div>
+</footer>
+</div>
+  <!--Jquery-->
+  <script type="text/javascript" src="libs/jquery-3.6.3.min.js"></script>
+  <!--SweetAlert-->
+  <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+  <!--Splide (carousel)-->
+  <script type="text/javascript" src="libs/splide.min.js"></script>
+  <!--materialize-->
+  <script type="text/javascript" src="libs/materialize.min.js"></script>
+  <!--My Js-->
+  <script type="text/javascript" src="template/js/main.js"></script>
+</body>
+</html>

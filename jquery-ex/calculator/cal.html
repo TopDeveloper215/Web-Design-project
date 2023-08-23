@@ -1,0 +1,64 @@
+<html>
+    <head></head>
+    <body>
+        <h1>calculator</h1>
+        <input type="text" name="num" id="num">
+        <button id="add" onclick="add()">+</button>
+        <button id="minus" onclick="minus()">-</button>
+        <button id="multiply" onclick="multiply()">*</button>
+        <button id="divide" onclick="divide()">/</button>
+        <button id="result" onclick="result()">=</button>
+        <script language="javascript" type="text/javascript">
+            let a,b,c,d;
+            
+            function add(){
+                a=document.getElementById("num").value;
+                console.log(a);
+                document.getElementById("num").value=''; 
+                c=1;               
+            }
+            function minus(){
+                a=document.getElementById("num").value;
+                console.log(a);
+                document.getElementById("num").value=''; 
+                c=2;                
+            }
+            function multiply(){
+                a=document.getElementById("num").value;
+                console.log(a);
+                document.getElementById("num").value=''; 
+                c=3;
+            }
+            function divide(){
+                a=document.getElementById("num").value;
+                console.log(a);
+                document.getElementById("num").value=''; 
+                c=4;
+            }
+            function result(){
+                b=document.getElementById("num").value;
+                if(c==1){
+                    d=parseFloat(a) + parseFloat(b);
+                    console.log(d);
+                    document.getElementById("num").value=d;
+                }
+                if(c==2){
+                    d=parseFloat(a) - parseFloat(b);
+                    console.log(d);
+                    document.getElementById("num").value=d;
+                }
+                if(c==3){
+                    d=parseFloat(a) * parseFloat(b);
+                    console.log(d);
+                    document.getElementById("num").value=d;
+                }
+                if(c==4){
+                    d=parseFloat(a) / parseFloat(b);
+                    console.log(d);
+                    document.getElementById("num").value=d;
+                }
+            }
+           
+        </script>
+    </body>
+</html>

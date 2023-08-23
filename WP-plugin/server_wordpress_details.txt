@@ -1,0 +1,5 @@
+Givekindness Cpanel
+
+https://givekindness.xyz/demog/wp-admin/
+id: wadmin
+pass: givekindnessxyz

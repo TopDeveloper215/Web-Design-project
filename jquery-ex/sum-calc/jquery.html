@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+
+</style>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+</head>
+<body>
+<input id="aa" type="number">
+<input id="bb" type="Submit">
+<script>
+  $(document).ready(function(){
+    
+    $("#bb").click(function(){
+      var sum=0;
+      var num = $("#aa").val();
+      num = parseInt(num);
+      console.log(num);
+      for(let i = 1; i<=num; i++){
+        sum += i;
+      }
+      alert("Text: " + sum);
+    });
+    
+  });
+  </script> 
+  
+  
+
+
+</body>
+<!-- <script>
+  function sum(N) {
+  var c = 0;
+    for(var i = 1; i <= N; i++){
+      c += i;
+    }
+    return c;
+}
+
+function run(){
+  val = document.getElementById("val").value;
+  document.getElementById("results").innerHTML=val+": "+Sum(val)
+  }
+</script>
+<input id="val">
+<input type="Submit" onclick="run();">
+<p id="results"></p> -->
+<!-- Mirrored from www.w3schools.com/jquery/tryit.asp?filename=tryjquery_children by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 14 Oct 2021 07:00:49 GMT -->
+</html>

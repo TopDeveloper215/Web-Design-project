@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="js/jquery-3.6.0.min.js"></script>
+    <title>ex_11</title>
+</head>
+<body>
+    <div>
+        <input type="text" id="num1">
+        <button id="but">calc</button>
+        <p id="result"></p>
+        <p id="res"></p>
+        <p id="max_view"></p>
+        <p id="min_view"></p>
+    </div>
+    <script>
+        $(document).ready(function(){
+            var a, b;
+            var sum = 0, q = '';
+            $('#but').click(function(){
+                a = $('#num1').val();
+                q += a + ",";
+                $('#result').html(q);
+                $('#num1').val('');
+                var qq = q.split(',');
+                b = qq;
+                var n = b.length;
+                var mid;
+            
+                for (let i = 1; i < n -1; i++){
+                    if (b[0] > b[i]) {
+                        mid = b[0];
+                        b[0] = b[i];
+                        b[i] = mid;
+                    }
+                }
+                $('#min_view').html(b[0]);
+                $('#max_view').html(b[n-2]);
+                // $('#max_view').html("asdasd");
+            })
+        })
+    </script>
+</body>
+</html>

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="js/jquery-3.6.0.min.js"></script>
+    <title>ex_4</title>
+</head>
+<body>
+    <p>This code calculate date</p>
+    <input type="text" id="num1">
+    <button id="but">start</button>
+    <p id="result">ww</p>
+    <p id="res">ww</p>
+    <script>
+     $(document).ready(function() {
+        $('#but').click(function() {
+            var x, y, n,  sum = 0;
+            n = $('#num1').val();
+            // y=parseFloat(y);
+            for(x = 1; x <= n; x ++) {
+                y = parseFloat(x ** 3);
+                sum += y;
+                if(sum > 10000){
+                    $('#result').html(sum)
+                    $('#res').html(x)
+                    break;
+                }
+            }
+        })
+            
+     })
+    </script>
+</body>
+</html>

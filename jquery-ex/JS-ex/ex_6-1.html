@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+</head>
+<body>
+    <input type="text" id="num1">
+    <input type="text" id="num2">
+    <button id="result">Result</button>
+    <p id="dis"></p>
+    <script>
+        $(document).ready(function(){
+            var a,b,c = '';
+            $('#result').click(function(e){
+                a = $('#num1').val();
+                b = $('#num2').val();
+                if( parseInt(a) > parseInt(b)){
+                    var d = a;
+                    a = b;
+                    b = d;
+                }
+                console.log(a);
+                console.log(b);
+                for (let i = 2; i<=a; i++){
+                    if(b % i == 0 && a % i == 0){
+                        c = i;
+
+                        console.log(c);
+
+                    }
+                }
+                $('#dis').html(c);
+            })
+        })
+        
+    </script>
+</body>
+</html>

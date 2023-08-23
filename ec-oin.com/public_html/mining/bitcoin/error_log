@@ -1,0 +1,8 @@
+[02-Nov-2022 04:50:33 America/New_York] PHP Notice:  Undefined index: function in /home2/eczoin1/domains/ec1.ec-oin.com/public_html/mining/bitcoin/manage.php on line 4
+[02-Nov-2022 04:54:48 America/New_York] PHP Notice:  Undefined index: function in /home2/eczoin1/domains/ec1.ec-oin.com/public_html/mining/bitcoin/manage.php on line 4
+[08-Nov-2022 03:40:37 America/New_York] PHP Warning:  mysqli_connect(): (HY000/1045): Access denied for user 'root'@'localhost' (using password: YES) in /home2/econnn/domains/ec-oin.com/public_html/mining/bitcoin/DataBase.php on line 29
+[08-Nov-2022 03:40:49 America/New_York] PHP Warning:  mysqli_connect(): (HY000/1045): Access denied for user 'root'@'localhost' (using password: YES) in /home2/econnn/domains/ec-oin.com/public_html/mining/bitcoin/DataBase.php on line 29
+[08-Nov-2022 03:40:50 America/New_York] PHP Warning:  mysqli_connect(): (HY000/1045): Access denied for user 'root'@'localhost' (using password: YES) in /home2/econnn/domains/ec-oin.com/public_html/mining/bitcoin/DataBase.php on line 29
+[08-Nov-2022 03:40:50 America/New_York] PHP Warning:  mysqli_connect(): (HY000/1045): Access denied for user 'root'@'localhost' (using password: YES) in /home2/econnn/domains/ec-oin.com/public_html/mining/bitcoin/DataBase.php on line 29
+[08-Nov-2022 03:41:10 America/New_York] PHP Warning:  mysqli_connect(): (HY000/1045): Access denied for user 'root'@'localhost' (using password: YES) in /home2/econnn/domains/ec-oin.com/public_html/mining/bitcoin/DataBase.php on line 29
+[08-Nov-2022 03:43:20 America/New_York] PHP Warning:  mysqli_connect(): (HY000/1045): Access denied for user 'econnn_manee'@'localhost' (using password: YES) in /home2/econnn/domains/ec-oin.com/public_html/mining/bitcoin/DataBase.php on line 29

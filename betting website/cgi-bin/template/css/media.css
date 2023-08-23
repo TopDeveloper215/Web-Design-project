@@ -1,0 +1,80 @@
+/*media (menu header)*/
+@media screen and (max-width:1200px) {
+  .ul-pc-menu {
+    display: none;
+  }
+  .mob-menu {
+    display: flex !important;
+  }
+  .pc-show {
+    display: none;
+  }
+}
+
+@media screen and (min-width:1200px) {
+  .pc-none {
+    display: none;
+  }
+  .pc-show {
+    display: block;
+  }
+}
+
+/*media smartphone large screen*/
+@media screen and (max-width:500px) {
+  .about-block {
+    flex-direction: column-reverse;
+  }
+  .about-block p, .partners-block p {
+    font-size: 17px;
+  }
+  .about-block img, .partners-block img {
+    max-width: 80%;
+  }
+  .bounty-block p {
+    font-size: 16px;
+  }
+  .stat-block div {
+    width: 95%;
+  }
+  .top-contest {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .top-contest .head {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-size: 25px;
+  }
+  .top-contest .fs17 {
+    font-size: 16px;
+  }
+  .bottom-contest {
+    flex-direction: column;
+  }
+  .grey-block {
+    max-width: 400px;
+  }
+  .mining-block {
+    flex-direction: column;
+  }
+  .ptcads {
+    min-height: 293px;
+  }
+  .top-ptc .desc {
+    width: 250px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+  }
+}
+
+/*media smartphone small screen*/
+@media screen and (max-width:400px) {
+  .site-name {
+    font-size: 25px;
+  }
+  .main {
+    padding: 15px 5px;
+  }
+}

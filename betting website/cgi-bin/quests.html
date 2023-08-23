@@ -1,0 +1,483 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>MINE BNB - Quests</title>
+  <meta name="description" content="MINE BNB - from 150% to 200% profit in 10 days">
+  <meta name="keywords" content="Mining, Big earnings, 15% daily, 16% daily, 18% daily, 20% daily, 150% ROI, 160% ROI, 180% ROI, 200% ROI, Earn, Earn Crypto, Crypto, BNB mining, BNB miner, BNB, BNB, BNB earn, earn BNB, earn BNB without investments"/>
+  <!--Icon-->
+  <link rel="shortcut icon" href="template/img/icon.png" type="image/png">
+  <!--Materialize-->
+  <link rel="stylesheet" href="libs/materialize.min.css" type="text/css"/>
+  <!--Icons FontAwesome-->
+  <script src="https://kit.fontawesome.com/84d745b22f.js" crossorigin="anonymous"></script>
+  <!--Splide (carousel)-->
+  <link rel="stylesheet" href="libs/splide.min.css" type="text/css"/>
+  <!--My Css-->
+  <link rel="stylesheet" href="template/css/other.css" type="text/css"/>
+  <link rel="stylesheet" href="template/css/main.css" type="text/css"/>
+  <link rel="stylesheet" href="template/css/extra.css" type="text/css"/>
+  <link rel="stylesheet" href="template/css/media.css" type="text/css"/>
+</head>
+<body>
+  <!--preloader-->
+  <div class="preloader">
+    <div class="loader">
+      <p class="heading"><img src="template/img/icon.png" class="mr10" style="margin-top: 1px;" width="32px">MINE BNB</p>
+      <div class="loading">
+        <div class="load"></div>
+        <div class="load"></div>
+        <div class="load"></div>
+        <div class="load"></div>
+      </div>
+    </div>
+  </div>
+  <!--preloader-->
+  <div class="wrapper">
+    <header>
+      <div class="header">
+        <div class="header-menu">
+          <div class="">
+            <img src="template/img/home.png" class="mr5" width="32px">
+            <a href="/" class="site-name">MINE BNB</a>
+          </div>
+          <div class="">
+            <ul class="ul-pc-menu">
+
+  <li><a href="/profile"><img src="template/img/icons/profile.png">Profile</a></li>
+  <li><a href="/deposit"><img src="template/img/icons/deposit.png">Deposit</a></li>
+  <li><a href="/withdraw"><img src="template/img/icons/withdraw.png">Withdraw</a></li>
+  <li><a href="/bonus"><img src="template/img/icons/bonus.png">Bonus</a></li>
+  <li><a href="/ptcads"><img src="template/img/icons/ptc.png">PTC Ads</a></li>
+  <li class="pc-none"><a href="/shortlinks"><img src="template/img/icons/shortlinks.png">Shortlinks</a></li>
+  <li class="pc-none"><a href="/quests"><img src="template/img/icons/quests.png">Quests</a></li>
+  <li class="pc-none"><a href="/contest"><img src="template/img/icons/contest.png">Contest</a></li>
+  <li class="pc-none"><a href="/bounty"><img src="template/img/icons/bounty.png">Bounty</a></li>
+  <li class="pc-none"><a href="/referrals"><img src="template/img/icons/referrals.png">Referrals</a></li>
+  <li class="mr0 pc-none"><form action data-operation="logout"><a onclick="sendAjax(this)"><img src="template/img/icons/logout.png">Logout</a></form></li>
+
+  <!-- from PC I hide 3 tabs and make them in the menu-->
+  <li class="pc-show additional-menu"><i class="fa-solid fa-ellipsis" onclick="showAddMenu()"></i></li>
+  <div id="addMenu" class="d-none">
+    <li><a href="/shortlinks"><img src="template/img/icons/shortlinks.png">Shortlinks</a></li>
+    <li><a href="/quests"><img src="template/img/icons/quests.png">Quests</a></li>
+    <li><a href="/contest"><img src="template/img/icons/contest.png">Contest</a></li>
+    <li><a href="/bounty"><img src="template/img/icons/bounty.png">Bounty</a></li>
+    <li><a href="/referrals"><img src="template/img/icons/referrals.png">Referrals</a></li>
+    <li><form action data-operation="logout"><a onclick="sendAjax(this)"><img src="template/img/icons/logout.png">Logout</a></form></li>
+  </div>
+
+            </ul>
+            <!--mobile-->
+            <div class="mob-menu">
+              <label for="burger" class="burger">
+                <input id="burger" onclick="showMobMenu()">
+                <span></span>
+                <span></span>
+                <span></span>
+              </label>
+            </div>
+            <a href="https://t.me/mineBNB_news" target="_blank" class="icon-tg-menu"><img src="template/img/telegram.png" width="32px"></a>
+          </div>
+        </div>
+        <!--mobile-->
+        <div class="right-mob-menu">
+          <ul class="ul-mob-menu">
+
+  <li><a href="/profile"><img src="template/img/icons/profile.png">Profile</a></li>
+  <li><a href="/deposit"><img src="template/img/icons/deposit.png">Deposit</a></li>
+  <li><a href="/withdraw"><img src="template/img/icons/withdraw.png">Withdraw</a></li>
+  <li><a href="/bonus"><img src="template/img/icons/bonus.png">Bonus</a></li>
+  <li><a href="/ptcads"><img src="template/img/icons/ptc.png">PTC Ads</a></li>
+  <li class="pc-none"><a href="/shortlinks"><img src="template/img/icons/shortlinks.png">Shortlinks</a></li>
+  <li class="pc-none"><a href="/quests"><img src="template/img/icons/quests.png">Quests</a></li>
+  <li class="pc-none"><a href="/contest"><img src="template/img/icons/contest.png">Contest</a></li>
+  <li class="pc-none"><a href="/bounty"><img src="template/img/icons/bounty.png">Bounty</a></li>
+  <li class="pc-none"><a href="/referrals"><img src="template/img/icons/referrals.png">Referrals</a></li>
+  <li class="mr0 pc-none"><form action data-operation="logout"><a onclick="sendAjax(this)"><img src="template/img/icons/logout.png">Logout</a></form></li>
+
+  <!-- from PC I hide 3 tabs and make them in the menu-->
+  <li class="pc-show additional-menu"><i class="fa-solid fa-ellipsis" onclick="showAddMenu()"></i></li>
+  <div id="addMenu" class="d-none">
+    <li><a href="/shortlinks"><img src="template/img/icons/shortlinks.png">Shortlinks</a></li>
+    <li><a href="/quests"><img src="template/img/icons/quests.png">Quests</a></li>
+    <li><a href="/contest"><img src="template/img/icons/contest.png">Contest</a></li>
+    <li><a href="/bounty"><img src="template/img/icons/bounty.png">Bounty</a></li>
+    <li><a href="/referrals"><img src="template/img/icons/referrals.png">Referrals</a></li>
+    <li><form action data-operation="logout"><a onclick="sendAjax(this)"><img src="template/img/icons/logout.png">Logout</a></form></li>
+  </div>
+
+          </ul>
+          <img src="template/img/icons/close.png" class="close-mob-menu" onclick="closeMobMenu()" width="32px">
+        </div>
+      </div>
+    </header>
+    <main>
+      <div class="main">
+        <div id="upPage">
+
+<!-- timer -->
+<script type="text/javascript">
+function addTimer(id, targetDate) {
+
+  let myInt = setInterval(function() {
+
+    var diff = new Date(targetDate - new Date());
+    var hours = diff.getUTCHours();
+    var mins = diff.getUTCMinutes();
+    var secs = diff.getUTCSeconds();
+
+    if(diff > 0) {
+      var displaytime = pad(hours) + ':' +  pad(mins) + ':' + pad(secs);
+      document.querySelector("[data-short='"+id+"']").innerHTML = displaytime;
+    } else {
+      setTimeout(() => { clearInterval(myInt); window.location.reload(); }, 1000)
+    }
+
+  }, 1000);
+}
+
+function pad(num) {
+  return num > 9 ? num : '0' + num;
+}
+</script>
+
+<div class="content-block">
+
+  <div class="fccw mt-10 top-user">
+    <div class="grey-block half fcc">
+      <img src="template/img/user/balance.png" width="28px" class="mr10">
+      <p class="tooltipped" data-position="top" data-tooltip="Balance"><span>4.857</span><span id="BNB"></span></p>
+      <a href="/withdraw" class="ml10"><i class="fa-regular fa-square-minus pay-icon"></i></a>
+    </div>
+    <div class="grey-block half fcc">
+      <img src="template/img/user/invested.png" width="28px" class="mr10">
+      <p class="tooltipped" data-position="top" data-tooltip="Invested"><span>0.00</span><span id="BNB"></span></p>
+    </div>
+  </div>
+
+  <div class="fccw mb-10">
+
+    <!--DEPOSIT Quest-->
+
+    <div class="grey-block half quests">
+
+      <p class="fs16 mt5 mb10 head"><img src="template/img/quest-deposit.png" class="mr5" width="28px">DEPOSIT QUEST</p>
+
+
+      <div class="quest-block">
+        <p class="name"><i class="fa-solid fa-diamond mr5"></i>Create deposits for 100 BNB</p>
+        <p class="total-progress tooltipped" data-position="top" data-tooltip="Progress">0.00/100.00<span id="BNB"></span></p>
+        <div class="progress">
+          <div class="determinate" style="width: 0%"></div>
+        </div>
+        <div class="reward">
+          <p class="reward tooltipped" data-position="top" data-tooltip="Reward"><i class="fa-solid fa-trophy mr5"></i>1.000<span id="BNB"></span></p>
+                      <form action data-operation="quests">
+              <input type="hidden" name="quest_id" value="1">
+              <input type="hidden" name="type" value="1">
+                              <button type="button" class="waves-effect waves-light btn-small dark-btn disabled">GET</button>
+                          </form>
+                  </div>
+      </div>
+
+
+      <div class="quest-block">
+        <p class="name"><i class="fa-solid fa-diamond mr5"></i>Create deposits for 500 BNB</p>
+        <p class="total-progress tooltipped" data-position="top" data-tooltip="Progress">0.00/500.00<span id="BNB"></span></p>
+        <div class="progress">
+          <div class="determinate" style="width: 0%"></div>
+        </div>
+        <div class="reward">
+          <p class="reward tooltipped" data-position="top" data-tooltip="Reward"><i class="fa-solid fa-trophy mr5"></i>5.000<span id="BNB"></span></p>
+                      <form action data-operation="quests">
+              <input type="hidden" name="quest_id" value="2">
+              <input type="hidden" name="type" value="1">
+                              <button type="button" class="waves-effect waves-light btn-small dark-btn disabled">GET</button>
+                          </form>
+                  </div>
+      </div>
+
+
+      <div class="quest-block">
+        <p class="name"><i class="fa-solid fa-diamond mr5"></i>Create deposits for 2,000 BNB</p>
+        <p class="total-progress tooltipped" data-position="top" data-tooltip="Progress">0.00/2000.00<span id="BNB"></span></p>
+        <div class="progress">
+          <div class="determinate" style="width: 0%"></div>
+        </div>
+        <div class="reward">
+          <p class="reward tooltipped" data-position="top" data-tooltip="Reward"><i class="fa-solid fa-trophy mr5"></i>25.000<span id="BNB"></span></p>
+                      <form action data-operation="quests">
+              <input type="hidden" name="quest_id" value="3">
+              <input type="hidden" name="type" value="1">
+                              <button type="button" class="waves-effect waves-light btn-small dark-btn disabled">GET</button>
+                          </form>
+                  </div>
+      </div>
+
+
+      <div class="quest-block">
+        <p class="name"><i class="fa-solid fa-diamond mr5"></i>Create deposits for 10,000 BNB</p>
+        <p class="total-progress tooltipped" data-position="top" data-tooltip="Progress">0.00/10000.00<span id="BNB"></span></p>
+        <div class="progress">
+          <div class="determinate" style="width: 0%"></div>
+        </div>
+        <div class="reward">
+          <p class="reward tooltipped" data-position="top" data-tooltip="Reward"><i class="fa-solid fa-trophy mr5"></i>200.000<span id="BNB"></span></p>
+                      <form action data-operation="quests">
+              <input type="hidden" name="quest_id" value="4">
+              <input type="hidden" name="type" value="1">
+                              <button type="button" class="waves-effect waves-light btn-small dark-btn disabled">GET</button>
+                          </form>
+                  </div>
+      </div>
+
+
+    </div>
+
+    <!--PTC ADS Quest-->
+
+    <div class="grey-block half quests">
+
+      <p class="fs16 mt5 mb10 head"><img src="template/img/quest-ptc.png" class="mr7" width="28px">PTC ADS QUEST</p>
+
+
+      <div class="quest-block">
+        <p class="name"><i class="fa-solid fa-diamond mr5"></i>View 10 PTC AD</p>
+        <p class="total-progress tooltipped" data-position="top" data-tooltip="Progress">15/10</p>
+        <div class="progress">
+          <div class="determinate" style="width: 150%"></div>
+        </div>
+        <div class="reward">
+          <p class="reward tooltipped" data-position="top" data-tooltip="Reward"><i class="fa-solid fa-trophy mr5"></i>0.100<span id="BNB"></span></p>
+                      <img src="template/img/complete.png" width="32px">
+                  </div>
+      </div>
+
+
+      <div class="quest-block">
+        <p class="name"><i class="fa-solid fa-diamond mr5"></i>View 50 PTC AD</p>
+        <p class="total-progress tooltipped" data-position="top" data-tooltip="Progress">15/50</p>
+        <div class="progress">
+          <div class="determinate" style="width: 30%"></div>
+        </div>
+        <div class="reward">
+          <p class="reward tooltipped" data-position="top" data-tooltip="Reward"><i class="fa-solid fa-trophy mr5"></i>1.000<span id="BNB"></span></p>
+                      <form action data-operation="quests">
+              <input type="hidden" name="quest_id" value="6">
+              <input type="hidden" name="type" value="2">
+                              <button type="button" class="waves-effect waves-light btn-small dark-btn disabled">GET</button>
+                          </form>
+                  </div>
+      </div>
+
+
+      <div class="quest-block">
+        <p class="name"><i class="fa-solid fa-diamond mr5"></i>View 300 PTC AD</p>
+        <p class="total-progress tooltipped" data-position="top" data-tooltip="Progress">15/300</p>
+        <div class="progress">
+          <div class="determinate" style="width: 5%"></div>
+        </div>
+        <div class="reward">
+          <p class="reward tooltipped" data-position="top" data-tooltip="Reward"><i class="fa-solid fa-trophy mr5"></i>5.000<span id="BNB"></span></p>
+                      <form action data-operation="quests">
+              <input type="hidden" name="quest_id" value="7">
+              <input type="hidden" name="type" value="2">
+                              <button type="button" class="waves-effect waves-light btn-small dark-btn disabled">GET</button>
+                          </form>
+                  </div>
+      </div>
+
+
+      <div class="quest-block">
+        <p class="name"><i class="fa-solid fa-diamond mr5"></i>View 1,000 PTC AD</p>
+        <p class="total-progress tooltipped" data-position="top" data-tooltip="Progress">15/1000</p>
+        <div class="progress">
+          <div class="determinate" style="width: 1.5%"></div>
+        </div>
+        <div class="reward">
+          <p class="reward tooltipped" data-position="top" data-tooltip="Reward"><i class="fa-solid fa-trophy mr5"></i>30.000<span id="BNB"></span></p>
+                      <form action data-operation="quests">
+              <input type="hidden" name="quest_id" value="8">
+              <input type="hidden" name="type" value="2">
+                              <button type="button" class="waves-effect waves-light btn-small dark-btn disabled">GET</button>
+                          </form>
+                  </div>
+      </div>
+
+
+    </div>
+
+    <!--SHORTLINKS Quest-->
+
+    <div class="grey-block half quests">
+
+      <p class="fs16 mt5 mb10 head"><img src="template/img/quest-shortlinks.png" class="mr7" width="28px">SHORTLINKS QUEST</p>
+
+
+      <div class="quest-block">
+        <p class="name"><i class="fa-solid fa-diamond mr5"></i>View 5 Shortlinks</p>
+        <p class="total-progress tooltipped" data-position="top" data-tooltip="Progress">11/5</p>
+        <div class="progress">
+          <div class="determinate" style="width: 220%"></div>
+        </div>
+        <div class="reward">
+          <p class="reward tooltipped" data-position="top" data-tooltip="Reward"><i class="fa-solid fa-trophy mr5"></i>0.100<span id="BNB"></span></p>
+                      <img src="template/img/complete.png" width="32px">
+                  </div>
+      </div>
+
+
+      <div class="quest-block">
+        <p class="name"><i class="fa-solid fa-diamond mr5"></i>View 20 Shortlinks</p>
+        <p class="total-progress tooltipped" data-position="top" data-tooltip="Progress">11/20</p>
+        <div class="progress">
+          <div class="determinate" style="width: 55%"></div>
+        </div>
+        <div class="reward">
+          <p class="reward tooltipped" data-position="top" data-tooltip="Reward"><i class="fa-solid fa-trophy mr5"></i>0.500<span id="BNB"></span></p>
+                      <form action data-operation="quests">
+              <input type="hidden" name="quest_id" value="10">
+              <input type="hidden" name="type" value="3">
+                              <button type="button" class="waves-effect waves-light btn-small dark-btn disabled">GET</button>
+                          </form>
+                  </div>
+      </div>
+
+
+      <div class="quest-block">
+        <p class="name"><i class="fa-solid fa-diamond mr5"></i>View 100 Shortlinks</p>
+        <p class="total-progress tooltipped" data-position="top" data-tooltip="Progress">11/100</p>
+        <div class="progress">
+          <div class="determinate" style="width: 11%"></div>
+        </div>
+        <div class="reward">
+          <p class="reward tooltipped" data-position="top" data-tooltip="Reward"><i class="fa-solid fa-trophy mr5"></i>3.000<span id="BNB"></span></p>
+                      <form action data-operation="quests">
+              <input type="hidden" name="quest_id" value="11">
+              <input type="hidden" name="type" value="3">
+                              <button type="button" class="waves-effect waves-light btn-small dark-btn disabled">GET</button>
+                          </form>
+                  </div>
+      </div>
+
+
+      <div class="quest-block">
+        <p class="name"><i class="fa-solid fa-diamond mr5"></i>View 300 Shortlinks</p>
+        <p class="total-progress tooltipped" data-position="top" data-tooltip="Progress">11/300</p>
+        <div class="progress">
+          <div class="determinate" style="width: 3.6666666666667%"></div>
+        </div>
+        <div class="reward">
+          <p class="reward tooltipped" data-position="top" data-tooltip="Reward"><i class="fa-solid fa-trophy mr5"></i>15.000<span id="BNB"></span></p>
+                      <form action data-operation="quests">
+              <input type="hidden" name="quest_id" value="12">
+              <input type="hidden" name="type" value="3">
+                              <button type="button" class="waves-effect waves-light btn-small dark-btn disabled">GET</button>
+                          </form>
+                  </div>
+      </div>
+
+
+    </div>
+
+    <!--REFERRALS Quest-->
+
+    <div class="grey-block half quests">
+
+      <p class="fs16 mt5 mb10 head"><img src="template/img/quest-referrals.png" class="mr7" width="28px">REFERRALS QUEST</p>
+
+
+      <div class="quest-block">
+        <p class="name"><i class="fa-solid fa-diamond mr5"></i>Earn on Referrals 10 BNB</p>
+        <p class="total-progress tooltipped" data-position="top" data-tooltip="Progress">11.22/10.00<span id="BNB"></span></p>
+        <div class="progress">
+          <div class="determinate" style="width: 112.2%"></div>
+        </div>
+        <div class="reward">
+          <p class="reward tooltipped" data-position="top" data-tooltip="Reward"><i class="fa-solid fa-trophy mr5"></i>0.500<span id="BNB"></span></p>
+                      <img src="template/img/complete.png" width="32px">
+                  </div>
+      </div>
+
+
+      <div class="quest-block">
+        <p class="name"><i class="fa-solid fa-diamond mr5"></i>Earn on Referrals 100 BNB</p>
+        <p class="total-progress tooltipped" data-position="top" data-tooltip="Progress">11.22/100.00<span id="BNB"></span></p>
+        <div class="progress">
+          <div class="determinate" style="width: 11.22%"></div>
+        </div>
+        <div class="reward">
+          <p class="reward tooltipped" data-position="top" data-tooltip="Reward"><i class="fa-solid fa-trophy mr5"></i>7.000<span id="BNB"></span></p>
+                      <form action data-operation="quests">
+              <input type="hidden" name="quest_id" value="14">
+              <input type="hidden" name="type" value="4">
+                              <button type="button" class="waves-effect waves-light btn-small dark-btn disabled">GET</button>
+                          </form>
+                  </div>
+      </div>
+
+
+      <div class="quest-block">
+        <p class="name"><i class="fa-solid fa-diamond mr5"></i>Earn on Referrals 500 BNB</p>
+        <p class="total-progress tooltipped" data-position="top" data-tooltip="Progress">11.22/500.00<span id="BNB"></span></p>
+        <div class="progress">
+          <div class="determinate" style="width: 2.244%"></div>
+        </div>
+        <div class="reward">
+          <p class="reward tooltipped" data-position="top" data-tooltip="Reward"><i class="fa-solid fa-trophy mr5"></i>50.000<span id="BNB"></span></p>
+                      <form action data-operation="quests">
+              <input type="hidden" name="quest_id" value="15">
+              <input type="hidden" name="type" value="4">
+                              <button type="button" class="waves-effect waves-light btn-small dark-btn disabled">GET</button>
+                          </form>
+                  </div>
+      </div>
+
+
+      <div class="quest-block">
+        <p class="name"><i class="fa-solid fa-diamond mr5"></i>Earn on Referrals 2,000 BNB</p>
+        <p class="total-progress tooltipped" data-position="top" data-tooltip="Progress">11.22/2000.00<span id="BNB"></span></p>
+        <div class="progress">
+          <div class="determinate" style="width: 0.561%"></div>
+        </div>
+        <div class="reward">
+          <p class="reward tooltipped" data-position="top" data-tooltip="Reward"><i class="fa-solid fa-trophy mr5"></i>300.000<span id="BNB"></span></p>
+                      <form action data-operation="quests">
+              <input type="hidden" name="quest_id" value="16">
+              <input type="hidden" name="type" value="4">
+                              <button type="button" class="waves-effect waves-light btn-small dark-btn disabled">GET</button>
+                          </form>
+                  </div>
+      </div>
+
+
+    </div>
+
+  </div>
+
+</div>
+
+    </div>
+  </div>
+</main>
+<footer>
+  <div class="footer">
+    MINEBNB.PRO © 2023 ALL RIGHTS RESERVED
+  </div>
+</footer>
+</div>
+  <!--Jquery-->
+  <script type="text/javascript" src="libs/jquery-3.6.3.min.js"></script>
+  <!--SweetAlert-->
+  <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+  <!--Splide (carousel)-->
+  <script type="text/javascript" src="libs/splide.min.js"></script>
+  <!--materialize-->
+  <script type="text/javascript" src="libs/materialize.min.js"></script>
+  <!--My Js-->
+  <script type="text/javascript" src="template/js/main.js"></script>
+</body>
+</html>

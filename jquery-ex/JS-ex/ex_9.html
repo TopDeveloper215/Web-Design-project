@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="js/jquery-3.6.0.min.js"></script>
+    <title>ex_9</title>
+</head>
+<body>
+    <button id="but">start</button>
+    <p id="display"></p>
+    <p id="dis"></p>
+    <script>
+        $(document).ready(function(){
+            var sum = [];
+            $('#but').click(function(){
+                var i=1;
+                // while(i<=9){
+                //     sum = p(i);
+                //     sum_1=sum + p(i)
+                // }
+                var res = 0;
+                for (let i = 1; i < 10; i++){
+                    var sum = 0;
+                    for (let j = 0; j < i; j++){
+                        sum = sum * 10 + i;
+                        $('#dis').html(i);
+                    }
+                    res += sum;
+                }
+                 $('#display').html(res);
+                 
+            })
+           
+        })
+    </script>
+
+</body>
+</html>

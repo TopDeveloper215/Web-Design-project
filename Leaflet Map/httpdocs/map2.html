@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Task</title>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet">
+        <link href="assets/leaflet.min.css" rel="stylesheet" />
+		<script src="assets/leaflet.min.js"></script>
+        <script src="assets/marker-direction.min.js"></script>
+        <style>
+            .leaflet-container {
+                height: 400px;
+                width: 600px;
+                max-width: 100%;
+                max-height: 100%;
+            }
+
+        </style>
+    </head>
+    <body style="background-color: white;">		
+        <div class="row" >
+            <div class="col-md-3">
+                <div id="map2" style="width: 100vw; height: all;"></div>
+                <script src="assets/map.min.js"></script>
+            </div>   
+        </div>
+        <script>
+            redraw(48.8528, 2.288772,'a','0',1);
+            setTimeout(redraw,1000,48.849976, 2.292473,'b','15 ',2);
+            setTimeout(redraw,2000,48.853816, 2.298129,'c','32 ',3);
+            setTimeout(redraw,3000,48.852178, 2.302,'d','65 ',4);
+            setTimeout(redraw,4000,48.850428, 2.296154,'e','108 ',5);
+        </script>
+	</body>
+</html>

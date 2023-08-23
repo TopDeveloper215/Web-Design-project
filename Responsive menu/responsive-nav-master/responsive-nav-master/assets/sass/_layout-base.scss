@@ -1,0 +1,145 @@
+@import "config";
+
+body {
+  padding-top: $nav-line-height; // Fixed header space
+}
+
+header {
+  display: block;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: $header-z-index;
+  padding-left: 10px;
+  line-height: $header-line-height;
+  background: $header-bg-color;
+  color: $header-text-color;
+
+  h1 {
+    margin: 0;
+    font-size: 1.7rem;
+    line-height: $header-line-height;
+
+    // Title Icon (See "_icon-font.scss")
+    &:before {
+      @extend %icon;
+      content: icon-char(mobile);
+      margin-right: 8px;
+    }
+  }
+}
+
+.nav-button, .nav-close {
+  position: fixed;
+  top: 0;
+  width: 2.4rem;
+  height: $header-line-height;
+  overflow: hidden; // Hide "Menu" text
+  z-index: $header-z-index + 1;
+  cursor: pointer;
+  text-decoration: none;
+  line-height: $header-line-height;
+  background: $header-bg-color;
+  color: $header-text-color;
+
+  // Menu Button Icon (See "_icon-font.scss")
+  &:before {
+    display: block;
+    text-align: center;
+  }
+}
+
+.nav-button {
+  display: block;
+  right: 1.0rem;
+  font-size: 1.7rem;
+
+  // Menu Button Icon (See "_icon-font.scss")
+  &:before {
+    @extend %icon;
+    content: icon-char(menu);
+  }
+}
+
+.nav-close {
+  display: none; // Only used on mobile if no-js
+  right: 4.0rem;
+  font-size: 1.9rem;
+
+  // Close Button Icon (See "_icon-font.scss")
+  &:before {
+    @extend %icon;
+    content: icon-char(menu-close);
+  }
+}
+
+.nav {
+  padding-top: $nav-line-height; // Fixed header space
+  line-height: $nav-line-height;
+  background: $nav-bg-color;
+  color: $nav-text-color;
+
+  // Top Menu
+  ul {
+    border-radius: 0 0 6px 6px;
+    background: $nav-bg-color;
+
+    // Sub Menu
+    ul {
+      background: lighten($nav-bg-color, 3%);
+
+      // Sub Sub Menu
+      ul {
+        background: lighten($nav-bg-color, 6%);
+
+        // Sub Sub Sub Menu
+        ul {
+          background: lighten($nav-bg-color, 9%);
+
+          // Sub Sub Sub Sub Menu
+          ul {
+            background: lighten($nav-bg-color, 12%);
+          }
+        }
+      }
+    }
+  }
+
+  // All List Items
+  li {
+    border-top: 1px solid $nav-horizontal-divider-color;
+    cursor: pointer;
+  }
+
+  li:hover > a,
+  li.nav-active > a { // .nav-active is used by jQuery
+    color: $nav-link-color-hover;
+    background: $nav-bg-color-hover; // li:hover for "sub menu trail" highlights ;)
+  }
+
+  .nav-submenu > ul {
+    margin-left: 10px; // Give all sub menu's some margin-left
+  }
+
+  .nav-submenu > a {
+    padding-right: 30px !important; // Some space for a sub menu icon
+  }
+
+  a, a:hover, a:active, a:visited {
+    border-radius: 6px;
+    padding: 0 15px 1px; // Will not overrule .submenu > a
+    color: $nav-link-color;
+    text-decoration: none;
+  }
+
+  // Sub Menu Icon (See "_icon-font.scss")
+  .nav-submenu > a:after {
+    position: absolute;
+    display: block;
+    right: 10px;
+    top: 1px;
+    @extend %icon;
+    content: icon-char(submenu-down);
+  }
+}
